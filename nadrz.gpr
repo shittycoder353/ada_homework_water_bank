@@ -1,0 +1,36 @@
+
+project Nadrz is
+  for Object_Dir use "nadrz\wrk";
+  for Main use ("nadrz.adb");
+  for Exec_Dir use ".";
+  for Source_Dirs use ("nadrz\src", "common\msgs", "common");
+
+
+  package Compiler is
+     for Default_Switches ("ada") use (
+	     "-gnatwa" -- all warnings
+	     ,"-gnatwl" -- warnings
+	     ,"-gnatwK" -- supress warnings Constants
+
+             ,"-O0" -- stupen optimalizacie
+             ,"-gnatf" -- all errors on a given line to be reported
+             ,"-gnatQ" -- generate '.ALI' and tree files even if illegalities. 
+             ,"-gnato" -- enable numeric overflow checking
+            ,"-gnatVa" -- DEBUG -- kontrola inicializovanych premennych (exception INVALID_DATA) 
+            );
+  end Compiler;
+   
+  package Binder is
+     for Default_Switches ("Ada") use ("-E"
+       , "-Sin" -- DEBUG -- with pragma Initialize_Scalars (gnat_ugn_5.html), "pragmas.adc"
+       );
+  end Binder;
+  
+   package Builder is
+     for Default_Switches ("ada") use ("-a", "-x", "-g"   -- Gnat5.04w
+         , "-d" -- ukazovat progress
+       );
+     for Global_Configuration_Pragmas use "pragmas.adc";
+   end Builder;
+
+end Nadrz;
