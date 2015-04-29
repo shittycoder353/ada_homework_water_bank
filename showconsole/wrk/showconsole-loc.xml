@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <Locations >
-  <Project>
-    <vfs_file>D:\Skola\Semestralka\ada_homework_water_bank\showconsole.gpr</vfs_file>
+  <Project >
     <file_marker column=" 8" line=" 31" >
       <vfs_file>D:\Skola\Semestralka\ada_homework_water_bank\showconsole\src\client_msgs.adb</vfs_file>
     </file_marker>
