@@ -39,7 +39,8 @@ package body Client_Msgs is
 
   procedure Action (Self : in CSetValue) is
   begin
-    Server_Services.SetValue(GetConnectionRef(Self), Self.valueName, Self.value);
+      Server_Services.SetValue(GetConnectionRef(Self), Self.valueName, Self.value);
+      Put_Line(ValueName_Pkg.To_String(Self.valueName) & " = " & Self.value.value'Img);
   end Action;
 
 end Client_Msgs;
