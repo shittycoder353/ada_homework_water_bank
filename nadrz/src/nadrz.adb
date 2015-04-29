@@ -35,7 +35,6 @@ begin
       --
       if hladina > 0.0 then
             odtok := 100.0*Long_Float(Random(Rnd_Odtok));	-- 0.0 .. 1.0
-            hladina := hladina - odtok;
       end if;
       if hladina < 0.0 then
            hladina := 0.0;
@@ -45,11 +44,11 @@ begin
         use Client_Msgs;
         msg_CPtr : CSetValue_CPtr := new CSetValue;
       begin
-        msg_CPtr.valueName := ValueName_Pkg.To_Bounded_String("AktualnaVyska");
+        msg_CPtr.valueName := ValueName_Pkg.To_Bounded_String("VyskaHladiny");
         msg_CPtr.value := validValue;
         msg_CPtr.value.value := Long_Float(hladina);
         Connection.SendMessage(c, CMessage_CPtr(msg_CPtr), bConnectionWasTerminated); --posle hodnotu
-        Put_Line(Long_Float'Image(hladina));
+        Put_Line(Long_Float'Image(odtok));
       end;
       --
     end loop;
