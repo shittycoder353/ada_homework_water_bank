@@ -41,7 +41,7 @@ begin
             use Client_Msgs;
             msg_CPtr : CSetValue_CPtr := new CSetValue;
          begin
-            msg_CPtr.valueName := ValueName_Pkg.To_Bounded_String("Zadana vyska"); --vyska hladiny zadana
+            msg_CPtr.valueName := ValueName_Pkg.To_Bounded_String("ZiadanavyskaHladiny"); --vyska hladiny zadana
             msg_CPtr.value := validValue;
             msg_CPtr.value.value := Long_Float(newSurfaceValue);
             Connection.SendMessage(c, CMessage_CPtr(msg_CPtr), bConnectionWasTerminated);
