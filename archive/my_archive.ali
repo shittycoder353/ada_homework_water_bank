@@ -1,0 +1,114 @@
+V "GNAT Lib v7.3"
+A -gnatA
+P SS ZX
+
+RN
+RV NO_DELAY
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FIXED_POINT
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_RELATIVE_DELAY
+RV NO_SECONDARY_STACK
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U my_archive%b		my_archive.adb		58dae8d3 NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
+W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.elementary_functions%s  a-nuelfu.ads  a-nuelfu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U my_archive%s		my_archive.ads		759f22e5 EE NE OO PK
+
+D ada.ads		20060709122604 3ffc8e18 ada%s
+D a-calend.ads		20120405211924 d86d6c8c ada.calendar%s
+D a-caldel.ads		20130729154232 9f20b83d ada.calendar.delays%s
+D a-except.ads		20140415182720 5250cb69 ada.exceptions%s
+D a-finali.ads		20140118000942 69f99942 ada.finalization%s
+D a-flteio.ads		20060709122604 e18a47a0 ada.float_text_io%s
+D a-ioexce.ads		20131225032402 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20080325095904 bb51c45a ada.numerics%s
+D a-nuelfu.ads		20060709122604 03e83d1c ada.numerics.elementary_functions%s
+D a-ngelfu.ads		20140523210204 b8fdcb46 ada.numerics.generic_elementary_functions%s
+D a-stream.ads		20140529074512 22b06827 ada.streams%s
+D a-tags.ads		20140415174600 dc4d0634 ada.tags%s
+D a-textio.ads		20140209021914 386df5d4 ada.text_io%s
+D a-tiflio.ads		20140208230218 56fbda09 ada.text_io.float_io%s
+D a-unccon.ads		20060709122604 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20140531114600 ef8b39d4 interfaces%s
+D i-cstrea.ads		20140609063624 e53d8b8e interfaces.c_streams%s
+D my_archive.ads	20150429112002 759f22e5 my_archive%s
+D my_archive.adb	20150429112948 f74a455e my_archive%b
+D system.ads		20120806180456 5fc8ae56 system%s
+D s-crtl.ads		20140609063624 ca3eb19d system.crtl%s
+D s-exctab.ads		20131225031848 54135002 system.exception_table%s
+D s-ficobl.ads		20140302165540 078245e4 system.file_control_block%s
+D s-finmas.ads		20131225031848 814daec4 system.finalization_masters%s
+D s-finroo.ads		20120402200032 4ff27390 system.finalization_root%s
+D s-parame.ads		20140604164142 7e2a0d7f system.parameters%s
+D s-pooglo.ads		20110224134916 542f33d0 system.pool_global%s
+D s-secsta.ads		20131225031848 86a2856d system.secondary_stack%s
+D s-soflin.ads		20140608144522 aa763b52 system.soft_links%s
+D s-stache.ads		20131225031848 a37c21ec system.stack_checking%s
+D s-stalib.ads		20140607163942 fa0a3617 system.standard_library%s
+D s-stoele.ads		20131225031848 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20140604164142 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20130510054206 b16154c2 system.storage_pools%s
+D s-traent.ads		20140412173246 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20140526151416 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20140220135258 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 19|1r6 1r45 2r6 2r45 3r6 3r45
+X 6 a-flteio.ads
+20K13*Float_Text_IO[14|46] 19|2w10 2r49
+X 8 a-numeri.ads
+16K13*Numerics 32e17 19|3r10 3r49
+X 9 a-nuelfu.ads
+18K22*Elementary_Functions[10|39] 19|3w19 3r58
+X 13 a-textio.ads
+49K13*Text_IO 471e16 19|1w10 1r49
+52P9*File_Type 19|9r21
+53n42*Append_File{53E9} 19|14r44 17r53
+73I12*Field{integer}
+86U14*Create 19|17s16
+87p7 File{52P9} 19|17r24
+88e7 Mode{53E9} 19|17r45
+89a7 Name{string} 19|17r66
+92U14*Open 19|14s10
+93p7 File{52P9} 19|14r16
+94e7 Mode{53E9} 19|14r36
+95a7 Name{string} 19|14r56
+98U14*Close 19|25s10
+241U14*Put 19|22s13
+259U14*Put_Line 19|24s10
+294X4*Name_Error 19|16r17
+X 14 a-tiflio.ads
+61U14*Put 19|20s13[6|20]
+62p7 File{13|52P9} 19|20r17[6|20]
+63f7 Item{float} 19|20r37[6|20]
+64i7 Fore{13|73I12} 19|20r50[6|20]
+65i7 Aft{13|73I12} 19|20r61[6|20]
+66i7 Exp{13|73I12} 19|20r71[6|20]
+68U14*Put 19|21s13[6|20]
+69f7 Item{float} 19|21r17[6|20]
+70i7 Fore{13|73I12} 19|21r30[6|20]
+71i7 Aft{13|73I12} 19|21r41[6|20]
+72i7 Exp{13|73I12} 19|21r51[6|20]
+X 18 my_archive.ads
+4K9*My_Archive 8l5 8e15 19|5b14 29l5 29t15
+5A9*Float_Vector(float)<integer> 7r34 7r55 19|6r35 6r56
+7V13*Archive_it{5A9} 7=24 19|6b13 28l7 28t17
+7a24 A{5A9} 19|6b25 19r19 19r30 20r45 21r25 27r14
+X 19 my_archive.adb
+7f7 Tmp{float}
+8i7 I{integer}
+9p7 Output_file{13|52P9} 14m24 14r24 17m32 17r32 20r25 22r17 24r19 25m17
+. 25r17
+19i14 I{integer} 20r47 21r27
+

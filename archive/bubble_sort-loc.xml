@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project>
+    <vfs_file>C:\Users\Martin\Desktop\semestralka\archive\bubble_sort.gpr</vfs_file>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_file>C:\Users\Martin\Desktop\semestralka\archive\src\my_sort.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_file>C:\Users\Martin\Desktop\semestralka\archive\src\my_sort.ads</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_file>C:\Users\Martin\Desktop\semestralka\archive\src\main.adb</vfs_file>
+    </file_marker>
+  </Project>
+  <Project >
+    <vfs_file >C:\Users\Martin\Desktop\Skola\bubble\bubble_sort.gpr</vfs_file>
+    <file_marker current="true" column=" 1" line=" 9">
+      <vfs_file >C:\Users\Martin\Desktop\Skola\bubble\src\main.adb</vfs_file>
+    </file_marker>
+  </Project>
+  <Project >
+    <file_marker column=" 34" line=" 7">
+      <vfs_file >C:\Users\Martin\Desktop\Skola\bubble\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_file >C:\Users\Martin\Desktop\Skola\bubble\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1">
+      <vfs_file >C:\Users\Martin\Desktop\Skola\bubble\src\my_sort.ads</vfs_file>
+    </file_marker>
+  </Project>
+  <Project >
+    <file_marker column=" 1" line=" 1">
+      <vfs_file >C:\Users\Martin\Desktop\Skola\bubble\src\bubble.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_file >C:\Users\Martin\Desktop\Skola\c1\ada\src\age.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_file >C:\Users\Martin\Desktop\Skola\bubble\src\bubble.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_file >C:\Users\Martin\Desktop\Skola\c4\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_file >C:\Users\Martin\Desktop\Skola\bubble\src\bubble.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_file >C:\Users\Martin\Desktop\Skola\bubble\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_file >C:\Users\Martin\Desktop\Skola\c4\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 18" line=" 3">
+      <vfs_file >C:\Users\Martin\Desktop\Skola\bubble\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_file >C:\Users\Martin\Desktop\Skola\c4\src_rts\nadrz_io.ads</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1">
+      <vfs_file >C:\Users\Martin\Desktop\Skola\c4\src_rts\nadrz_io.adb</vfs_file>
+    </file_marker>
+  </Project>
+  <Project >
+    <file_marker column=" 1" line=" 1">
+      <vfs_file >C:\Users\Martin\Desktop\Skola\bubble\src\bubble.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_file >C:\Users\Martin\Desktop\Skola\c1\ada\src\age.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_file >C:\Users\Martin\Desktop\Skola\bubble\src\bubble.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_file >C:\Users\Martin\Desktop\Skola\c4\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_file >C:\Users\Martin\Desktop\Skola\bubble\src\bubble.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_file >C:\Users\Martin\Desktop\Skola\bubble\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_file >C:\Users\Martin\Desktop\Skola\c4\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 18" line=" 4">
+      <vfs_file >C:\Users\Martin\Desktop\Skola\bubble\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1">
+      <vfs_file >C:\Users\Martin\Desktop\Skola\c4\src_rts\nadrz_io.ads</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1">
+      <vfs_file >C:\Users\Martin\Desktop\Skola\c4\src_rts\nadrz_io.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>
