@@ -30,7 +30,7 @@ begin
       use Client_Msgs;
       msg_CPtr : CAttachValue_CPtr := new CAttachValue;
     begin
-      msg_CPtr.valueName := ValueName_Pkg.To_Bounded_String("h");
+      msg_CPtr.valueName := ValueName_Pkg.To_Bounded_String("Pritok");
       Connection.SendMessage(c, CMessage_CPtr(msg_CPtr), bConnectionWasTerminated);
     end;
     --
