@@ -34,7 +34,7 @@ begin
         use Client_Msgs;
         msg_CPtr : CSetValue_CPtr := new CSetValue;
       begin
-        msg_CPtr.valueName := ValueName_Pkg.To_Bounded_String("h"); --vyska hladiny
+        msg_CPtr.valueName := ValueName_Pkg.To_Bounded_String("Pritok"); --vyska hladiny
         msg_CPtr.value := validValue;
         msg_CPtr.value.value := Long_Float(i);
         Connection.SendMessage(c, CMessage_CPtr(msg_CPtr), bConnectionWasTerminated);

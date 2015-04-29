@@ -30,7 +30,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 RR MAX_ASYNCHRONOUS_SELECT_NESTING=0
 
-U riadenie%b		riadenie.adb		5a29c3f2 NE OO SU IS
+U riadenie%b		riadenie.adb		d9ce4722 NE OO SU IS
 W ada%s			ada.ads			ada.ali
 W ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
 W ada.strings%s		a-string.ads		a-string.ali
@@ -68,9 +68,9 @@ D a-tags.ads		20140415174600 dc4d0634 ada.tags%s
 D a-textio.ads		20140209021914 386df5d4 ada.text_io%s
 D a-unccon.ads		20060709122604 f9eb8f06 ada.unchecked_conversion%s
 D a-uncdea.ads		20060709122604 f15a5ed1 ada.unchecked_deallocation%s
-D client.ads		20150429084242 00d6ace7 client%s
-D client_msgs.ads	20150429084242 3e8112ae client_msgs%s
-D connection.ads	20150429084242 1ab52a44 connection%s
+D client.ads		20150429084542 00d6ace7 client%s
+D client_msgs.ads	20150429084542 3e8112ae client_msgs%s
+D connection.ads	20150429084542 1ab52a44 connection%s
 D gnat.ads		20140603192030 fd2ad2f1 gnat%s
 D g-os_lib.ads		20101026135908 0db74523 gnat.os_lib%s
 D g-socket.ads		20140604164854 6b8693a8 gnat.sockets%s
@@ -78,7 +78,7 @@ D interfac.ads		20140531114600 ef8b39d4 interfaces%s
 D i-c.ads		20101110140308 5421119b interfaces.c%s
 D i-cstrin.ads		20140116162450 341d0ddf interfaces.c.strings%s
 D i-cstrea.ads		20140609063624 e53d8b8e interfaces.c_streams%s
-D riadenie.adb		20150429084242 398de47d riadenie%b
+D riadenie.adb		20150429113822 ba6a60ad riadenie%b
 D system.ads		20120806180456 5fc8ae56 system%s
 D s-atacco.ads		20120408201644 4c36d12f system.address_to_access_conversions%s
 D s-atocou.ads		20130522054942 cd7c94ca system.atomic_counters%s
@@ -121,8 +121,8 @@ D s-traent.ads		20140412173246 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20140526151416 9d58a4c0 system.unsigned_types%s
 D s-wchcon.ads		20140220135258 1b7d22d2 system.wch_con%s
 D s-win32.ads		20130730171346 b7f96285 system.win32%s
-D valuetypes.ads	20150429084242 4d0dd7b0 valuetypes%s
-D d:\skola\semestralka\ada_homework_water_bank\pragmas.adc  20061119195948 00000000
+D valuetypes.ads	20150429084542 4d0dd7b0 valuetypes%s
+D d:\skola-ada\semestralka2\ada_homework_water_bank\pragmas.adc  20150429091928 00000000
 X 1 ada.ads
 16K9*Ada 19e8 30|5r6 5r45 7r6 7r45
 X 11 a-string.ads

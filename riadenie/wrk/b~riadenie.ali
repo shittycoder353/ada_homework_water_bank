@@ -17,21 +17,21 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_OBSOLESCENT_FEATURES
 RV SPARK_05
 
-U ada_main%b		b~riadenie.adb		1c55f531 NE OO PK IL
+U ada_main%b		b~riadenie.adb		b2c5910e NE OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.exceptions%s	a-except.adb		a-except.ali
 W system%s		system.ads		system.ali
 W system.restrictions%s	s-restri.adb		s-restri.ali
 
-U ada_main%s		b~riadenie.ads		a3e8e502 EE NE OO PK IL
+U ada_main%s		b~riadenie.ads		0d78813d EE NE OO PK IL
 W system%s		system.ads		system.ali
 W system.scalar_values%s  s-scaval.adb		s-scaval.ali
 
 D ada.ads		20060709122604 3ffc8e18 ada%s
 D a-except.ads		20140415182720 5250cb69 ada.exceptions%s
 D a-unccon.ads		20060709122604 f9eb8f06 ada.unchecked_conversion%s
-D b~riadenie.ads	20150429091146 42844c03 ada_main%s
-D b~riadenie.adb	20150429091146 171c7429 ada_main%b
+D b~riadenie.ads	20150429113824 ec14283c ada_main%s
+D b~riadenie.adb	20150429113824 171c7429 ada_main%b
 D system.ads		20120806180456 5fc8ae56 system%s
 D s-parame.ads		20140604164142 7e2a0d7f system.parameters%s
 D s-restri.ads		20131225031848 1b9d0672 system.restrictions%s

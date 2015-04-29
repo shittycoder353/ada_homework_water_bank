@@ -55,9 +55,9 @@ D a-tags.ads		20140415174600 dc4d0634 ada.tags%s
 D a-textio.ads		20140209021914 386df5d4 ada.text_io%s
 D a-unccon.ads		20060709122604 f9eb8f06 ada.unchecked_conversion%s
 D a-uncdea.ads		20060709122604 f15a5ed1 ada.unchecked_deallocation%s
-D connection.ads	20150429084242 1ab52a44 connection%s
-D connection_msgs.ads	20150429084242 f4a213e8 connection_msgs%s
-D connection_msgs.adb	20150429084242 1162cff3 connection_msgs%b
+D connection.ads	20150429084542 1ab52a44 connection%s
+D connection_msgs.ads	20150429084542 f4a213e8 connection_msgs%s
+D connection_msgs.adb	20150429084542 1162cff3 connection_msgs%b
 D gnat.ads		20140603192030 fd2ad2f1 gnat%s
 D g-os_lib.ads		20101026135908 0db74523 gnat.os_lib%s
 D g-socket.ads		20140604164854 6b8693a8 gnat.sockets%s
@@ -92,7 +92,7 @@ D s-string.ads		20131225031848 8fe54fb7 system.strings%s
 D s-traent.ads		20140412173246 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20140526151416 9d58a4c0 system.unsigned_types%s
 D s-wchcon.ads		20140220135258 1b7d22d2 system.wch_con%s
-D d:\skola\semestralka\ada_homework_water_bank\pragmas.adc  20061119195948 00000000
+D d:\skola-ada\semestralka2\ada_homework_water_bank\pragmas.adc  20150429091928 00000000
 X 1 ada.ads
 16K9*Ada 19e8 12|2r6 2r29
 X 7 a-textio.ads

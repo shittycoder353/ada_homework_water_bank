@@ -2,8 +2,7 @@ with Connection;	use Connection;
 with ValueTypes;	use ValueTypes;
 
 package Client_Msgs is
-
-
+   Pritok : Long_Float := 0.0;
   ---------------------
   -- CConnectMessage --
   ---------------------

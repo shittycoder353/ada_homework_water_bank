@@ -73,8 +73,8 @@ D s-taskin.ads		20140411214108 4d5e47af system.tasking%s
 D s-traent.ads		20140412173246 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20140526151416 9d58a4c0 system.unsigned_types%s
 D s-win32.ads		20130730171346 b7f96285 system.win32%s
-D valuetypes.ads	20150429084242 4d0dd7b0 valuetypes%s
-D d:\skola\semestralka\ada_homework_water_bank\pragmas.adc  20061119195948 00000000
+D valuetypes.ads	20150429084542 4d0dd7b0 valuetypes%s
+D d:\skola-ada\semestralka2\ada_homework_water_bank\pragmas.adc  20150429091928 00000000
 X 1 ada.ads
 16K9*Ada 19e8 41|1r6 1r25 2r6 36r32 43r33
 X 5 a-reatim.ads

@@ -7,7 +7,7 @@ with Ada.Text_IO;			use Ada.Text_IO;
 with GNAT.OS_Lib;
 with Ada.Numerics.Float_Random;	use Ada.Numerics.Float_Random;
 use Ada.Text_IO;
-with Ada.Float_Text_IO;          use Ada.Float_Text_IO;
+with Ada.Real_Time;		use Ada.Real_Time;
 procedure Nadrz is
   c : Connection.TConnectionRef;
   bConnectionWasTerminated : Boolean;
@@ -15,6 +15,10 @@ procedure Nadrz is
    odtok : Long_Float := 0.0;
    Rnd_Odtok : Generator;
    dT : Duration;
+   currTime : Time;
+   G_vyskaHladaniny_TimeStamp : Time := Clock;
+   zmenaVysky : Long_Float;
+   h : Long_Float;
 begin
   Connection.GlobalInit;
   --
@@ -29,15 +33,33 @@ begin
       msg_CPtr.clientName := ClientName_Pkg.To_Bounded_String("Nadrz");
       Connection.SendMessage(c, CMessage_CPtr(msg_CPtr), bConnectionWasTerminated);
     end;
+    declare
+      use Client_Msgs;
+      msg_CPtr : CAttachValue_CPtr := new CAttachValue;
+    begin
+      msg_CPtr.valueName := ValueName_Pkg.To_Bounded_String("Pritok");
+      Connection.SendMessage(c, CMessage_CPtr(msg_CPtr), bConnectionWasTerminated);
+    end;
     --
     loop
       delay 10.0;
-      --
+         --
+      currTime := Clock;
       if hladina > 0.0 then
-            odtok := 100.0*Long_Float(Random(Rnd_Odtok));	-- 0.0 .. 1.0
+        odtok := 1000.0*Long_Float(Random(Rnd_Odtok));	-- 0.0 .. 1.0
       end if;
-      if hladina < 0.0 then
-           hladina := 0.0;
+      --
+      dT := To_Duration(currTime - G_vyskaHladaniny_TimeStamp);
+      G_vyskaHladaniny_TimeStamp := currTime;
+      --
+      zmenaVysky := Long_Float(dT) * (Client_Msgs.Pritok - odtok);
+      --
+      h := hladina + zmenaVysky;
+      if h >= 0.0 then
+        hladina := h;
+      else
+        hladina := 0.0;
+        odtok := 0.0;
       end if;
       --
       declare
@@ -48,7 +70,12 @@ begin
         msg_CPtr.value := validValue;
         msg_CPtr.value.value := Long_Float(hladina);
         Connection.SendMessage(c, CMessage_CPtr(msg_CPtr), bConnectionWasTerminated); --posle hodnotu
+        Put("Odtok: ");
         Put_Line(Long_Float'Image(odtok));
+        Put("Pritok: ");
+        Put_Line(Long_Float'Image(Pritok));
+        Put("Vyska Hladina: ");
+        Put_Line(Long_Float'Image(hladina));
       end;
       --
     end loop;

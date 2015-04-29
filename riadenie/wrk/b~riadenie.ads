@@ -36,7 +36,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#5a29c3f2#;
+   u00001 : constant Version_32 := 16#d9ce4722#;
    pragma Export (C, u00001, "riadenieB");
    u00002 : constant Version_32 := 16#fbff4c67#;
    pragma Export (C, u00002, "system__standard_libraryB");
