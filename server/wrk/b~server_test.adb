@@ -430,16 +430,16 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   D:\Skola-ada\c5\server\wrk\connection.o
-   --   D:\Skola-ada\c5\server\wrk\server.o
-   --   D:\Skola-ada\c5\server\wrk\server_test.o
-   --   D:\Skola-ada\c5\server\wrk\valuetypes.o
-   --   D:\Skola-ada\c5\server\wrk\server_services.o
-   --   D:\Skola-ada\c5\server\wrk\client_msgs.o
-   --   D:\Skola-ada\c5\server\wrk\connection_msgs.o
-   --   -LD:\Skola-ada\c5\server\wrk\
-   --   -LD:\Skola-ada\c5\server\wrk\
-   --   -LC:/Programy/7.3.0w-20140613/lib/gcc/i686-pc-mingw32/4.7.4/adalib/
+   --   D:\Skola\Semestralka\ada_homework_water_bank\server\wrk\connection.o
+   --   D:\Skola\Semestralka\ada_homework_water_bank\server\wrk\server.o
+   --   D:\Skola\Semestralka\ada_homework_water_bank\server\wrk\server_test.o
+   --   D:\Skola\Semestralka\ada_homework_water_bank\server\wrk\valuetypes.o
+   --   D:\Skola\Semestralka\ada_homework_water_bank\server\wrk\server_services.o
+   --   D:\Skola\Semestralka\ada_homework_water_bank\server\wrk\client_msgs.o
+   --   D:\Skola\Semestralka\ada_homework_water_bank\server\wrk\connection_msgs.o
+   --   -LD:\Skola\Semestralka\ada_homework_water_bank\server\wrk\
+   --   -LD:\Skola\Semestralka\ada_homework_water_bank\server\wrk\
+   --   -LD:/GNATPRO/7.3.0w-20140613/lib/gcc/i686-pc-mingw32/4.7.4/adalib/
    --   -static
    --   -lgnarl
    --   -lgnat
