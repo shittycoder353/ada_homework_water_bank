@@ -65,7 +65,7 @@ D a-textio.ads		20140209021914 386df5d4 ada.text_io%s
 D a-unccon.ads		20060709122604 f9eb8f06 ada.unchecked_conversion%s
 D a-uncdea.ads		20060709122604 f15a5ed1 ada.unchecked_deallocation%s
 D client_msgs.ads	20150429084242 3e8112ae client_msgs%s
-D client_msgs.adb	20150429092348 534cccf1 client_msgs%b
+D client_msgs.adb	20150429102830 534cccf1 client_msgs%b
 D connection.ads	20150429084242 1ab52a44 connection%s
 D gnat.ads		20140603192030 fd2ad2f1 gnat%s
 D g-socket.ads		20140604164854 6b8693a8 gnat.sockets%s

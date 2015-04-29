@@ -17,21 +17,21 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_OBSOLESCENT_FEATURES
 RV SPARK_05
 
-U ada_main%b		b~showconsole.adb	a7e20d76 NE OO PK IL
+U ada_main%b		b~showconsole.adb	18adf0ad NE OO PK IL
 W ada%s			ada.ads			ada.ali
 W ada.exceptions%s	a-except.adb		a-except.ali
 W system%s		system.ads		system.ali
 W system.restrictions%s	s-restri.adb		s-restri.ali
 
-U ada_main%s		b~showconsole.ads	12c55253 EE NE OO PK IL
+U ada_main%s		b~showconsole.ads	327cd71f EE NE OO PK IL
 W system%s		system.ads		system.ali
 W system.scalar_values%s  s-scaval.adb		s-scaval.ali
 
 D ada.ads		20060709122604 3ffc8e18 ada%s
 D a-except.ads		20140415182720 5250cb69 ada.exceptions%s
 D a-unccon.ads		20060709122604 f9eb8f06 ada.unchecked_conversion%s
-D b~showconsole.ads	20150429092352 f3a9fb52 ada_main%s
-D b~showconsole.adb	20150429092352 1d863b3f ada_main%b
+D b~showconsole.ads	20150429104350 d3107e1e ada_main%s
+D b~showconsole.adb	20150429104350 827043a8 ada_main%b
 D system.ads		20120806180456 5fc8ae56 system%s
 D s-parame.ads		20140604164142 7e2a0d7f system.parameters%s
 D s-restri.ads		20131225031848 1b9d0672 system.restrictions%s
@@ -44,7 +44,7 @@ X 1 ada.ads
 X 2 a-except.ads
 53K13*Exceptions 360e19 5|7w10
 X 4 b~showconsole.ads
-4K9*ada_main 712l5 712e13 5|9b14 442l5 442t13
+4K9*ada_main 772l5 772e13 5|9b14 442l5 442t13
 7i4*gnat_argc{integer} 11m22 11r22 5|410m7
 8m4*gnat_argv{6|64M9} 12m22 12r22 5|411m7
 9m4*gnat_envp{6|64M9} 13m22 13r22 5|412m7
@@ -77,7 +77,8 @@ X 4 b~showconsole.ads
 . 415r22 417r22 419r22 421r22 423r22 425r22 427r22 429r22 431r22 433r22 435r22
 . 437r22 439r22 441r22 443r22 445r22 447r22 449r22 451r22 453r22 455r22 457r22
 . 459r22 461r22 463r22 465r22 467r22 469r22 471r22 473r22 475r22 477r22 479r22
-. 481r22 483r22
+. 481r22 483r22 485r22 487r22 489r22 491r22 493r22 495r22 497r22 499r22 501r22
+. 503r22 505r22 507r22 509r22 511r22 513r22 515r22 517r22 519r22 521r22 523r22
 39m4*u00001{38M9} 40r22
 41m4*u00002{38M9} 42r22
 43m4*u00003{38M9} 44r22
@@ -301,50 +302,70 @@ X 4 b~showconsole.ads
 479m4*u00221{38M9} 480r22
 481m4*u00222{38M9} 482r22
 483m4*u00223{38M9} 484r22
+485m4*u00224{38M9} 486r22
+487m4*u00225{38M9} 488r22
+489m4*u00226{38M9} 490r22
+491m4*u00227{38M9} 492r22
+493m4*u00228{38M9} 494r22
+495m4*u00229{38M9} 496r22
+497m4*u00230{38M9} 498r22
+499m4*u00231{38M9} 500r22
+501m4*u00232{38M9} 502r22
+503m4*u00233{38M9} 504r22
+505m4*u00234{38M9} 506r22
+507m4*u00235{38M9} 508r22
+509m4*u00236{38M9} 510r22
+511m4*u00237{38M9} 512r22
+513m4*u00238{38M9} 514r22
+515m4*u00239{38M9} 516r22
+517m4*u00240{38M9} 518r22
+519m4*u00241{38M9} 520r22
+521m4*u00242{38M9} 522r22
+523m4*u00243{38M9} 524r22
 X 5 b~showconsole.adb
-12i4 E084{short_integer} 12m46 12r46 349m7 349r15
-13i4 E015{short_integer} 13m46 13r46 347m7 347r15
-14i4 E025{short_integer} 14m46 14r46 297m7 297r15
-15i4 E135{short_integer} 15m46 15r46 299m7 299r15
-16i4 E073{short_integer} 16m46 16r46 301m7 301r15
-17i4 E160{short_integer} 17m46 17r46 303m7 303r15
-18i4 E166{short_integer} 18m46 18r46 345m7 345r15
-19i4 E057{short_integer} 19m46 19r46 344m7 344r15
-20i4 E072{short_integer} 20m46 20r46 307m7 307r15
-21i4 E047{short_integer} 21m46 21r46 342m7 342r15
-22i4 E115{short_integer} 22m46 22r46 341m7 341r15
-23i4 E027{short_integer} 23m46 23r46 311m7 311r15
-24i4 E082{short_integer} 24m46 24r46 313m7 313r15
-25i4 E080{short_integer} 25m46 25r46 315m7 315r15
-26i4 E097{short_integer} 26m46 26r46 317m7 317r15
-27i4 E089{short_integer} 27m46 27r46 118m7 118r15 340m7 340r15
-28i4 E103{short_integer} 28m46 28r46 119m7 119r15 338m7 338r15
-29i4 E153{short_integer} 29m46 29r46 321m7 321r15
-30i4 E008{short_integer} 30m46 30r46 324m7 324r15
-31i4 E006{short_integer} 31m46 31r46 326m7 326r15
-32i4 E099{short_integer} 32m46 32r46 154m7 154r15 328m7 328r15
-33i4 E087{short_integer} 33m46 33r46 151m10 151r18 330m7 330r15
-34i4 E188{short_integer} 34m46 34r46 140m7 140r15 332m7 332r15
-35i4 E078{short_integer} 35m46 35r46 124m10 124r18 337m7 337r15
-36i4 E110{short_integer} 36m46 36r46 108m10 108r18 359m7 359r15
-37i4 E121{short_integer} 37m46 37r46 127m7 127r15 335m7 335r15
-38i4 E019{short_integer} 38m46 38r46 351m7 351r15
-39i4 E162{short_integer} 39m46 39r46 111m7 111r15 353m7 353r15
-40i4 E117{short_integer} 40m46 40r46 355m7 355r15
-41i4 E113{short_integer} 41m46 41r46 357m7 357r15
-42i4 E186{short_integer} 42m46 42r46 361m7 361r15
-43i4 E200{short_integer} 43m46 43r46 363m7 363r15
-44i4 E137{short_integer} 44m46 44r46 366m7 366r15
-45i4 E070{short_integer} 45m46 45r46 97m7 97r15 369m7 369r15
-46i4 E190{short_integer} 46m46 46r46 371m7 371r15
-47i4 E196{short_integer} 47m46 47r46 90m7 90r15 373m7 373r15
-48i4 E208{short_integer} 48m46 48r46 375m7 375r15
-49i4 E216{short_integer} 49m46 49r46 377m7 377r15
-50i4 E132{short_integer} 50m46 50r46 74m10 74r18 383m7 383r15
-51i4 E107{short_integer} 51m46 51r46 379m7 379r15
-52i4 E181{short_integer} 52m46 52r46 77m7 77r15 381m7 381r15
-53i4 E219{short_integer} 53m46 53r46 385m7 385r15
-54i4 E218{short_integer} 54m46 54r46 63m7 63r15 387m7 387r15
+12i4 E074{short_integer} 12m46 12r46 349m7 349r15
+13i4 E013{short_integer} 13m46 13r46 347m7 347r15
+14i4 E023{short_integer} 14m46 14r46 297m7 297r15
+15i4 E155{short_integer} 15m46 15r46 299m7 299r15
+16i4 E048{short_integer} 16m46 16r46 301m7 301r15
+17i4 E180{short_integer} 17m46 17r46 303m7 303r15
+18i4 E186{short_integer} 18m46 18r46 345m7 345r15
+19i4 E050{short_integer} 19m46 19r46 344m7 344r15
+20i4 E047{short_integer} 20m46 20r46 307m7 307r15
+21i4 E072{short_integer} 21m46 21r46 342m7 342r15
+22i4 E125{short_integer} 22m46 22r46 341m7 341r15
+23i4 E025{short_integer} 23m46 23r46 311m7 311r15
+24i4 E070{short_integer} 24m46 24r46 313m7 313r15
+25i4 E068{short_integer} 25m46 25r46 315m7 315r15
+26i4 E087{short_integer} 26m46 26r46 317m7 317r15
+27i4 E079{short_integer} 27m46 27r46 118m7 118r15 340m7 340r15
+28i4 E093{short_integer} 28m46 28r46 119m7 119r15 338m7 338r15
+29i4 E173{short_integer} 29m46 29r46 321m7 321r15
+30i4 E146{short_integer} 30m46 30r46 324m7 324r15
+31i4 E144{short_integer} 31m46 31r46 326m7 326r15
+32i4 E089{short_integer} 32m46 32r46 154m7 154r15 328m7 328r15
+33i4 E077{short_integer} 33m46 33r46 151m10 151r18 330m7 330r15
+34i4 E208{short_integer} 34m46 34r46 140m7 140r15 332m7 332r15
+35i4 E066{short_integer} 35m46 35r46 124m10 124r18 337m7 337r15
+36i4 E120{short_integer} 36m46 36r46 108m10 108r18 359m7 359r15
+37i4 E131{short_integer} 37m46 37r46 127m7 127r15 335m7 335r15
+38i4 E017{short_integer} 38m46 38r46 351m7 351r15
+39i4 E182{short_integer} 39m46 39r46 111m7 111r15 353m7 353r15
+40i4 E127{short_integer} 40m46 40r46 355m7 355r15
+41i4 E123{short_integer} 41m46 41r46 357m7 357r15
+42i4 E206{short_integer} 42m46 42r46 361m7 361r15
+43i4 E220{short_integer} 43m46 43r46 363m7 363r15
+44i4 E157{short_integer} 44m46 44r46 366m7 366r15
+45i4 E045{short_integer} 45m46 45r46 97m7 97r15 369m7 369r15
+46i4 E210{short_integer} 46m46 46r46 371m7 371r15
+47i4 E216{short_integer} 47m46 47r46 90m7 90r15 373m7 373r15
+48i4 E228{short_integer} 48m46 48r46 375m7 375r15
+49i4 E236{short_integer} 49m46 49r46 377m7 377r15
+50i4 E142{short_integer} 50m46 50r46 74m10 74r18 383m7 383r15
+51i4 E117{short_integer} 51m46 51r46 379m7 379r15
+52i4 E201{short_integer} 52m46 52r46 77m7 77r15 381m7 381r15
+53i4 E239{short_integer} 53m46 53r46 385m7 385r15
+54i4 E238{short_integer} 54m46 54r46 63m7 63r15 387m7 387r15
 56a4 Local_Priority_Specific_Dispatching{string} 276r9
 57a4 Local_Interrupt_States{string} 279r27
 59b4 Is_Elaborated{boolean} 185r14 188m7 237r10 240m7
