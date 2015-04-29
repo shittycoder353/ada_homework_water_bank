@@ -1,0 +1,287 @@
+V "GNAT Lib v7.3"
+A -O0
+A -g
+A -gnatwa
+A -gnatwl
+A -gnatwK
+A -gnatf
+A -gnatQ
+A -gnato
+A -gnatVa
+A -gnatA
+P SS ZX
+
+RN
+RR NO_ABORT_STATEMENTS
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_ALLOCATORS
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_INITIALIZE_SCALARS
+RV NO_LOCAL_ALLOCATORS
+RV NO_NESTED_FINALIZATION
+RV NO_PROTECTED_TYPES
+RV NO_RECURSION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_STREAMS
+RV NO_UNCHECKED_ACCESS
+RV NO_UNCHECKED_DEALLOCATION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_ALIASING
+RV NO_ELABORATION_CODE
+RV SPARK_05
+RR MAX_ASYNCHRONOUS_SELECT_NESTING=0
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U server_services%b	server_services.adb	078c1bbc OO PF PK IS
+W ada%s			ada.ads			ada.ali
+W ada.containers%s	a-contai.ads		a-contai.ali
+W ada.containers.ordered_maps%s
+Z ada.containers.red_black_trees%s  a-crbltr.ads  a-crbltr.ali
+Z ada.containers.red_black_trees.generic_keys%s
+Z ada.containers.red_black_trees.generic_operations%s
+W ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.finalization%s	a-finali.adb		a-finali.ali
+Z ada.iterator_interfaces%s
+W ada.streams%s		a-stream.adb		a-stream.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W ada.unchecked_deallocation%s
+W client_msgs%s		client_msgs.adb		client_msgs.ali
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+W system.concat_2%s	s-conca2.adb		s-conca2.ali
+W system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+W system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+W system.scalar_values%s  s-scaval.adb		s-scaval.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.storage_elements%s  s-stoele.adb	s-stoele.ali
+W system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+W system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+W system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+W system.strings.stream_ops%s  s-ststop.adb	s-ststop.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+W valuetypes%s		valuetypes.ads		valuetypes.ali
+
+U server_services%s	server_services.ads	d5b07808 EE NE OO PK IS
+W connection%s		connection.adb		connection.ali
+W valuetypes%s		valuetypes.ads		valuetypes.ali
+
+D ada.ads		20060709122604 3ffc8e18 ada%s
+D a-charac.ads		20070910122414 2d3ec45b ada.characters%s
+D a-chlat1.ads		20131225032402 66457d31 ada.characters.latin_1%s
+D a-contai.ads		20101007020746 61e5e089 ada.containers%s
+D a-coorma.ads		20130213200554 f6e6861b ada.containers.ordered_maps%s
+D a-coorma.adb		20131003160132 3c7e7c60 ada.containers.ordered_maps%b
+D a-crbltr.ads		20110612034816 b8a2dc05 ada.containers.red_black_trees%s
+D a-crbtgk.ads		20101026134802 18ae3fab ada.containers.red_black_trees.generic_keys%s
+D a-crbtgk.adb		20131126210526 62191c0e ada.containers.red_black_trees.generic_keys%b
+D a-crbtgo.ads		20101026134802 375f6f61 ada.containers.red_black_trees.generic_operations%s
+D a-crbtgo.adb		20131126210526 885f84ae ada.containers.red_black_trees.generic_operations%b
+D a-except.ads		20140415182720 5250cb69 ada.exceptions%s
+D a-finali.ads		20140118000942 69f99942 ada.finalization%s
+D a-ioexce.ads		20131225032402 e4a01f64 ada.io_exceptions%s
+D a-iteint.ads		20110825125802 7c7305e9 ada.iterator_interfaces%s
+D a-reatim.ads		20140215140906 63f07669 ada.real_time%s
+D a-stream.ads		20140529074512 22b06827 ada.streams%s
+D a-string.ads		20060709122604 90ac6797 ada.strings%s
+D a-strbou.ads		20140521153704 53ab54ae ada.strings.bounded%s
+D a-strmap.ads		20140117162816 e8bb714a ada.strings.maps%s
+D a-strsup.ads		20130419141218 a27dcb33 ada.strings.superbounded%s
+D a-tags.ads		20140415174600 dc4d0634 ada.tags%s
+D a-textio.ads		20140209021914 386df5d4 ada.text_io%s
+D a-unccon.ads		20060709122604 f9eb8f06 ada.unchecked_conversion%s
+D a-uncdea.ads		20060709122604 f15a5ed1 ada.unchecked_deallocation%s
+D client_msgs.ads	20150429084242 3e8112ae client_msgs%s
+D connection.ads	20150429084242 1ab52a44 connection%s
+D gnat.ads		20140603192030 fd2ad2f1 gnat%s
+D g-socket.ads		20140604164854 6b8693a8 gnat.sockets%s
+D interfac.ads		20140531114600 ef8b39d4 interfaces%s
+D i-c.ads		20101110140308 5421119b interfaces.c%s
+D i-cstrin.ads		20140116162450 341d0ddf interfaces.c.strings%s
+D i-cstrea.ads		20140609063624 e53d8b8e interfaces.c_streams%s
+D server_services.ads	20150429084242 820885fc server_services%s
+D server_services.adb	20150429084242 c9d97640 server_services%b
+D system.ads		20120806180456 5fc8ae56 system%s
+D s-atacco.ads		20120408201644 4c36d12f system.address_to_access_conversions%s
+D s-conca2.ads		20131225032402 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20140609063624 ca3eb19d system.crtl%s
+D s-exctab.ads		20131225031848 54135002 system.exception_table%s
+D s-fatflt.ads		20101026134802 11beb392 system.fat_flt%s
+D s-fatgen.ads		20140607163942 9267ca45 system.fat_gen%s
+D s-fatlfl.ads		20101026134802 378cba9f system.fat_lflt%s
+D s-fatllf.ads		20101026134802 4d5c1475 system.fat_llf%s
+D s-fatsfl.ads		20101026134802 e2f873d3 system.fat_sflt%s
+D s-ficobl.ads		20140302165540 078245e4 system.file_control_block%s
+D s-finmas.ads		20131225031848 814daec4 system.finalization_masters%s
+D s-finroo.ads		20120402200032 4ff27390 system.finalization_root%s
+D s-multip.ads		20100727005504 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20140614025446 96d85b6a system.os_constants%s
+D s-osinte.ads		20101110140648 ecf1fbfd system.os_interface%s
+D s-parame.ads		20140604164142 7e2a0d7f system.parameters%s
+D s-pooglo.ads		20110224134916 542f33d0 system.pool_global%s
+D s-scaval.ads		20101026134802 bea40757 system.scalar_values%s
+D s-secsta.ads		20131225031848 86a2856d system.secondary_stack%s
+D s-soflin.ads		20140608144522 aa763b52 system.soft_links%s
+D s-stache.ads		20131225031848 a37c21ec system.stack_checking%s
+D s-stausa.ads		20110325145854 017a0a05 system.stack_usage%s
+D s-stalib.ads		20140607163942 fa0a3617 system.standard_library%s
+D s-stoele.ads		20131225031848 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20140604164142 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20130510054206 b16154c2 system.storage_pools%s
+D s-stposu.ads		20140228195614 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20130629133728 aedef97e system.stream_attributes%s
+D s-string.ads		20131225031848 8fe54fb7 system.strings%s
+D s-ststop.ads		20131225031848 e6693757 system.strings.stream_ops%s
+D s-tasinf.ads		20140124181712 601f6b72 system.task_info%s
+D s-taspri.ads		20140604164142 196697f7 system.task_primitives%s
+D s-taprop.ads		20140109083702 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20140411214108 4d5e47af system.tasking%s
+D s-taprob.ads		20110915211910 502249e3 system.tasking.protected_objects%s
+D s-traent.ads		20140412173246 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20140526151416 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20140220135258 1b7d22d2 system.wch_con%s
+D s-win32.ads		20130730171346 b7f96285 system.win32%s
+D valuetypes.ads	20150429084242 4d0dd7b0 valuetypes%s
+D d:\skola\semestralka\ada_homework_water_bank\pragmas.adc  20061119195948 00000000
+X 1 ada.ads
+16K9*Ada 19e8 35|2r6 2r37 3r6 4r6 24r34 28r37 218r33
+X 4 a-contai.ads
+16K13*Containers 24e19 35|3r10 24r38 28r41
+X 5 a-coorma.ads
+41+9 Key_Type 35|25r7 29r7
+42+9 Element_Type 35|26r7 30r7
+47k24*Ordered_Maps 377e32 35|3w21 24r49 28r52
+53R9*Map<13|43R9> 35|35r36[28] 40r32[24] 64r33[24] 65r41[28]
+59R9*Cursor 35|80r11[24] 106r11[28] 178r13[28] 204r11[28] 223r39[24] 255r11[28]
+62r4*Empty_Map{53R9[35|28]} 35|90r45[28] 264r39[24]
+64r4*No_Element{59R9[35|24]} 35|85r14[24] 112r14[28] 183r25[28] 208r14[28]
+. 228r51[24] 260r14[28]
+77U14*Clear 35|236s11[24]
+81V13*Element{35|19P8} 35|95s27[24] 117s31[28] 190s23[28] 220s55[28] 230s31[24]
+147U14*Insert 35|92s9[24] 138s9[28] 142s9[24] 266s9[28]
+164U14*Delete 35|231s13[28]
+166U14*Delete 35|244s9[28]
+172V13*First{59R9[35|28]} 35|178s23[28] 223s49[24]
+184V13*Next{59R9[35|28]} 35|192s16[28] 233s26[24]
+192V13*Find{59R9[35|24]} 35|80s21[24] 106s21[28] 204s21[28] 255s21[28]
+200V13*Contains{boolean} 35|137s14[28] 141s14[24]
+240R9 Node_Type
+241P9 Node_Access(240R9[35|24])
+X 6 a-coorma.adb
+49V13 Color{7|35E9} 10|45i19
+52V13 Left{5|241P9[35|24]} 10|41i19[35|24]
+55V13 Parent{5|241P9[35|28]} 10|39i19[35|28]
+58V13 Right{5|241P9[35|24]} 10|43i19[35|24]
+61U14 Set_Parent 10|40i19[35|24]
+64U14 Set_Left 10|42i19[35|24]
+67U14 Set_Right 10|44i19[35|28]
+70U14 Set_Color 10|46i19[35|28]
+X 15 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[5|68]>
+X 19 a-strbou.ads
+50R12*Bounded_String<21|47R9>
+174V17*"<"{boolean} 5|44i19[76|36]
+X 23 a-textio.ads
+49K13*Text_IO 471e16 35|2w10 2r41
+263U14*Put_Line 35|210s9 269s9
+X 25 a-uncdea.ads
+20u15*Unchecked_Deallocation 35|4w10 218r37
+X 26 client_msgs.ads
+4K9*Client_Msgs 63e16 35|5w6 147r41 185r27
+38R8*CChangeValue<27|4R8> 43e13 35|147r53 185r39
+39r5*valueName{76|40R11} 35|149m13 187m15
+41r5*value{76|11R8} 35|150m13 188m15
+X 27 connection.ads
+2K9*Connection 43e15 34|1w6 1r22
+4H8*CMessage 41e13 35|148r13 186r15
+5P8*CMessage_CPtr(4R8) 35|147r20 176r20
+11P8*TConnectionRef 34|9r26 16r26 24r26 29r26 35|29r19 39r21 50r28 54r28
+. 59r28 62r28 101r28 124r28 160r28 200r28 251r28 282r26 294r26 307r26 318r26
+12V13*"<"{boolean} 5|44i19
+18U13*Disconnect 35|239s11
+22U13*SendMessage 35|154s9 190s11
+30V12*GetConnectionName{string} 35|269s74
+X 34 server_services.ads
+4K9*Server_Services 31l5 31e20 35|15b14 325l5 325t20
+8U13*AttachValue 9>7 10>7 35|281b13 287l7 287t18
+9p7 connectionRef{27|11P8} 35|282b7 286r24
+10r7 valueName{76|40R11} 35|283b7 286r39
+15U13*SetValue 16>7 17>7 18>7 35|293b13 300l7 300t15
+16p7 connectionRef{27|11P8} 35|294b7 299r21
+17r7 valueName{76|40R11} 35|295b7 299r36
+18r7 value{76|11R8} 35|296b7 299r47
+23U13*ConnectionWasDied 24>7 35|306b13 311l7 311t24
+24p7 connectionRef{27|11P8} 35|307b7 310r30
+28U13*ConnectionWasEstablised 29>7 35|317b13 322l7 322t30
+29p7 connectionRef{27|11P8} 35|318b7 321r36
+X 35 server_services.adb
+18R8 TNamedValue 19r34 32c8 36e13 87r31
+19P8 TNamedValue_Ptr(18R8) 26r23 76r30 129r24 167r24 221r28
+21R8 TConnectionInfo 22r38 38c8 41e13 218r60 262r35
+22P8 TConnectionInfo_Ptr(21R8) 30r23 102r16 108r28 130r28 218r77 220r32 257r28
+24K11 NamedValues_Pkg[5|47] 40r16 64r17 78r11 127r31 216r15 223r23 228r35
+. 264r23
+28K11 ConnectionInfo_Pkg[5|47] 35r17 65r22 90r26 104r11 127r11 165r11 202r11
+. 253r11
+33r5*valueName{76|40R11} 88m13 187r43
+34r5*currValue{76|11R8} 89m13 150r37 173m22 188r39
+35r5*clients{5|53R9[28]} 90m13 137r38 138m31 178r44 231m35
+39p5*connectionRef{27|11P8} 190r34 239m41 263m13
+40r5*values{5|53R9[24]} 141r42 142m35 223r74 236m36 264m13
+47w13 Server 72b18 275l7 275t13 286r5 299r5 310r5 321r5
+49U15 AttachValue 50>9 51>9 123b15 157l9 157t20 286s12
+50p9 connectionRef{27|11P8} 124b9 130r69 137r47 138r40 154r21
+51r9 valueName{76|40R11} 125b9 134r29 141r50 142r43 149r26
+53U15 SetValue 54>9 55>9 56>9 159b15 196l9 196t17 299s12
+54p9 connectionRef{27|11P8} 160b9 164r28
+55r9 valueName{76|40R11} 161b9 171r29
+56r9 value{76|11R8} 162b9 173r35
+58U15 ConnectionWasDied 59>9 199b15 248l9 248t26 310s12
+59p9 connectionRef{27|11P8} 200b9 204r42 231r44
+61U15 ConnectionWasEstablised 62>9 250b15 273l9 273t32 321s12
+62p9 connectionRef{27|11P8} 251b9 255r42 263r30 266r32 269r92
+64r5 valuesMap{5|53R9[24]} 80r26 92r16
+65r5 connectionsMap{5|53R9[28]} 106r26 204r26 244r16 255r26 266r16
+74U15 GetOrCreateNamedValue 74b15 98l9 98t30 134s7 171s7
+80r7 c{5|59R9[24]} 85r10 95r35
+100V14 GetConnectionInfo{22P8} 100b14 121l9 121t26 130s51
+106r7 c{5|59R9[28]} 112r10 117r39
+108p7 connectionInfo_Ptr{22P8} 114m9 117m9 120r14
+129p7 namedValue_Ptr{19P8} 134m40 134r40 137r23 138r16 142r54 150r22
+130p7 connectionInfo_Ptr{22P8} 138r55 141r23 142r16
+147p9 msg_CPtr{27|5P8} 154m36 154r36
+152b9 bConnectionWasTerminated{boolean} 154m46
+167p7 namedValue_Ptr{19P8} 171m40 171r40 173r7 178r29 187r28 188r24
+176p9 msg_CPtr{27|5P8} 185m11 190m49 190r49
+178r9 c{5|59R9[28]} 183r21 190r31 192m11 192r21
+180b9 bConnectionWasTerminated{boolean} 190m59
+204r7 c{5|59R9[28]} 208r10 220r63 244m32 244r32
+218U21 Free[25|20] 240s11
+220p11 connectionInfo_Ptr{22P8} 223r55 236r17 239r22 240m16 240r16
+221p11 namedValue_Ptr{19P8} 230m13 231r20
+223r11 currValue{5|59R9[24]} 228r23 230r39 233m13 233r31
+255r7 c{5|59R9[28]} 260r10
+257p7 connectionInfo_Ptr{22P8} 262m9 266r47
+X 58 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+X 76 valuetypes.ads
+4K9*ValueTypes 34|2w6 2r22 35|9w6 12r5 76|49e15
+11R8*TValue 34|18r26 35|34r17 56r28 162r28 296r26 76|21e13
+23r3*unknownValue{11R8} 35|89r26
+36K11*ValueName_Pkg[19|46] 35|12r16
+40R11*TValueName{19|50R12[36]} 34|10r26 17r26 35|25r19 33r17 51r28 55r28
+. 75r24 125r28 161r28 283r26 295r26
+

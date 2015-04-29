@@ -1,0 +1,145 @@
+V "GNAT Lib v7.3"
+A -O0
+A -g
+A -gnatwa
+A -gnatwl
+A -gnatwK
+A -gnatf
+A -gnatQ
+A -gnato
+A -gnatVa
+A -gnatA
+P SS ZX
+
+RN
+RR NO_ABORT_STATEMENTS
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_INITIALIZE_SCALARS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+RR MAX_ASYNCHRONOUS_SELECT_NESTING=0
+
+U connection_msgs%b	connection_msgs.adb	9db5cfaa NE OO PK IS
+W ada%s			ada.ads			ada.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W server_services%s	server_services.adb	server_services.ali
+W system.concat_2%s	s-conca2.adb		s-conca2.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U connection_msgs%s	connection_msgs.ads	ee1739ac EE OO PF PK IS
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.streams%s		a-stream.adb		a-stream.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W connection%s		connection.adb		connection.ali
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+W system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+W system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.storage_elements%s  s-stoele.adb	s-stoele.ali
+
+D ada.ads		20060709122604 3ffc8e18 ada%s
+D a-charac.ads		20070910122414 2d3ec45b ada.characters%s
+D a-chlat1.ads		20131225032402 66457d31 ada.characters.latin_1%s
+D a-except.ads		20140415182720 5250cb69 ada.exceptions%s
+D a-finali.ads		20140118000942 69f99942 ada.finalization%s
+D a-ioexce.ads		20131225032402 e4a01f64 ada.io_exceptions%s
+D a-reatim.ads		20140215140906 63f07669 ada.real_time%s
+D a-stream.ads		20140529074512 22b06827 ada.streams%s
+D a-string.ads		20060709122604 90ac6797 ada.strings%s
+D a-strbou.ads		20140521153704 53ab54ae ada.strings.bounded%s
+D a-strmap.ads		20140117162816 e8bb714a ada.strings.maps%s
+D a-strsup.ads		20130419141218 a27dcb33 ada.strings.superbounded%s
+D a-tags.ads		20140415174600 dc4d0634 ada.tags%s
+D a-textio.ads		20140209021914 386df5d4 ada.text_io%s
+D a-unccon.ads		20060709122604 f9eb8f06 ada.unchecked_conversion%s
+D a-uncdea.ads		20060709122604 f15a5ed1 ada.unchecked_deallocation%s
+D connection.ads	20150429084242 1ab52a44 connection%s
+D connection_msgs.ads	20150429084242 f4a213e8 connection_msgs%s
+D connection_msgs.adb	20150429084242 d372ac6a connection_msgs%b
+D gnat.ads		20140603192030 fd2ad2f1 gnat%s
+D g-socket.ads		20140604164854 6b8693a8 gnat.sockets%s
+D interfac.ads		20140531114600 ef8b39d4 interfaces%s
+D i-c.ads		20101110140308 5421119b interfaces.c%s
+D i-cstrin.ads		20140116162450 341d0ddf interfaces.c.strings%s
+D i-cstrea.ads		20140609063624 e53d8b8e interfaces.c_streams%s
+D server_services.ads	20150429084242 820885fc server_services%s
+D system.ads		20120806180456 5fc8ae56 system%s
+D s-atacco.ads		20120408201644 4c36d12f system.address_to_access_conversions%s
+D s-conca2.ads		20131225032402 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20140609063624 ca3eb19d system.crtl%s
+D s-exctab.ads		20131225031848 54135002 system.exception_table%s
+D s-fatflt.ads		20101026134802 11beb392 system.fat_flt%s
+D s-fatgen.ads		20140607163942 9267ca45 system.fat_gen%s
+D s-fatlfl.ads		20101026134802 378cba9f system.fat_lflt%s
+D s-fatllf.ads		20101026134802 4d5c1475 system.fat_llf%s
+D s-fatsfl.ads		20101026134802 e2f873d3 system.fat_sflt%s
+D s-ficobl.ads		20140302165540 078245e4 system.file_control_block%s
+D s-finmas.ads		20131225031848 814daec4 system.finalization_masters%s
+D s-finroo.ads		20120402200032 4ff27390 system.finalization_root%s
+D s-multip.ads		20100727005504 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20140614025446 96d85b6a system.os_constants%s
+D s-osinte.ads		20101110140648 ecf1fbfd system.os_interface%s
+D s-parame.ads		20140604164142 7e2a0d7f system.parameters%s
+D s-pooglo.ads		20110224134916 542f33d0 system.pool_global%s
+D s-scaval.ads		20101026134802 bea40757 system.scalar_values%s
+D s-secsta.ads		20131225031848 86a2856d system.secondary_stack%s
+D s-soflin.ads		20140608144522 aa763b52 system.soft_links%s
+D s-stache.ads		20131225031848 a37c21ec system.stack_checking%s
+D s-stausa.ads		20110325145854 017a0a05 system.stack_usage%s
+D s-stalib.ads		20140607163942 fa0a3617 system.standard_library%s
+D s-stoele.ads		20131225031848 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20140604164142 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20130510054206 b16154c2 system.storage_pools%s
+D s-stratt.ads		20130629133728 aedef97e system.stream_attributes%s
+D s-tasinf.ads		20140124181712 601f6b72 system.task_info%s
+D s-taspri.ads		20140604164142 196697f7 system.task_primitives%s
+D s-taprop.ads		20140109083702 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20140411214108 4d5e47af system.tasking%s
+D s-traent.ads		20140412173246 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20140526151416 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20140220135258 1b7d22d2 system.wch_con%s
+D s-win32.ads		20130730171346 b7f96285 system.win32%s
+D valuetypes.ads	20150429084242 4d0dd7b0 valuetypes%s
+D d:\skola\semestralka\ada_homework_water_bank\pragmas.adc  20061119195948 00000000
+X 1 ada.ads
+16K9*Ada 19e8 19|1r6 1r37
+X 14 a-textio.ads
+49K13*Text_IO 471e16 19|1w10 1r41
+263U14*Put_Line 19|13s5 25s5
+X 17 connection.ads
+2K9*Connection 43e15 18|1w6 1r37
+4H8*CMessage 41e13 18|10r37 22r31
+11P8*TConnectionRef
+28V12*GetConnectionRef{11P8} 19|12s45 13s50 22s44 24s39
+30V12*GetConnectionName{string} 19|13s32 22s26
+X 18 connection_msgs.ads
+3K9*Connection_Msgs 28l5 28e20 19|4b14 29l5 29t20
+10R8*CConnectionEstablised<17|4R8> 10e62 11r49 13P13 13r30 19|10r31
+11P8*CConnectionEstablised_CPtr(10R8)
+13U13*Action<17|8p13> 13>20 19|10b13 14l7 14t13
+13r20 Self{10R8} 19|10b21 12r62 13r67
+22R8*CConnectionDied<17|4R8> 22e56 23r43 25P13 25r30 19|21r31
+23P8*CConnectionDied_CPtr(22R8)
+25U13*Action<17|8p13> 25>20 19|21b13 26l7 26t13
+25r20 Self{22R8} 19|21b21 22r61 24r56
+X 19 connection_msgs.adb
+22a5 connName{string} 25r32
+X 26 server_services.ads
+4K9*Server_Services 19|2w6 12r5 24r5 26|31e20
+23U13*ConnectionWasDied 19|24s21
+28U13*ConnectionWasEstablised 19|12s21
+X 49 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+

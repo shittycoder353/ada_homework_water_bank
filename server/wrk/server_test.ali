@@ -1,0 +1,68 @@
+V "GNAT Lib v7.3"
+M P W=b
+A -O0
+A -g
+A -gnatwa
+A -gnatwl
+A -gnatwK
+A -gnatf
+A -gnatQ
+A -gnato
+A -gnatVa
+A -gnatA
+P ZX
+
+RN
+RR NO_ABORT_STATEMENTS
+RV NO_INITIALIZE_SCALARS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RR MAX_ASYNCHRONOUS_SELECT_NESTING=0
+
+U server_test%b		server_test.adb		b0081913 NE OO SU IS
+W interfaces%s		interfac.ads		interfac.ali
+W server%s		server.adb		server.ali
+W system.scalar_values%s  s-scaval.adb		s-scaval.ali
+
+D ada.ads		20060709122604 3ffc8e18 ada%s
+D a-except.ads		20140415182720 5250cb69 ada.exceptions%s
+D a-finali.ads		20140118000942 69f99942 ada.finalization%s
+D a-stream.ads		20140529074512 22b06827 ada.streams%s
+D a-tags.ads		20140415174600 dc4d0634 ada.tags%s
+D a-unccon.ads		20060709122604 f9eb8f06 ada.unchecked_conversion%s
+D a-uncdea.ads		20060709122604 f15a5ed1 ada.unchecked_deallocation%s
+D gnat.ads		20140603192030 fd2ad2f1 gnat%s
+D g-socket.ads		20140604164854 6b8693a8 gnat.sockets%s
+D interfac.ads		20140531114600 ef8b39d4 interfaces%s
+D i-c.ads		20101110140308 5421119b interfaces.c%s
+D server.ads		20150429084242 5a0dc11f server%s
+D server_test.adb	20150429084242 ea05d80c server_test%b
+D system.ads		20120806180456 5fc8ae56 system%s
+D s-exctab.ads		20131225031848 54135002 system.exception_table%s
+D s-fatflt.ads		20101026134802 11beb392 system.fat_flt%s
+D s-fatgen.ads		20140607163942 9267ca45 system.fat_gen%s
+D s-fatlfl.ads		20101026134802 378cba9f system.fat_lflt%s
+D s-fatllf.ads		20101026134802 4d5c1475 system.fat_llf%s
+D s-fatsfl.ads		20101026134802 e2f873d3 system.fat_sflt%s
+D s-finmas.ads		20131225031848 814daec4 system.finalization_masters%s
+D s-finroo.ads		20120402200032 4ff27390 system.finalization_root%s
+D s-oscons.ads		20140614025446 96d85b6a system.os_constants%s
+D s-parame.ads		20140604164142 7e2a0d7f system.parameters%s
+D s-pooglo.ads		20110224134916 542f33d0 system.pool_global%s
+D s-scaval.ads		20101026134802 bea40757 system.scalar_values%s
+D s-soflin.ads		20140608144522 aa763b52 system.soft_links%s
+D s-stache.ads		20131225031848 a37c21ec system.stack_checking%s
+D s-stalib.ads		20140607163942 fa0a3617 system.standard_library%s
+D s-stoele.ads		20131225031848 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20140604164142 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20130510054206 b16154c2 system.storage_pools%s
+D s-traent.ads		20140412173246 005bf670 system.traceback_entries%s
+D d:\skola\semestralka\ada_homework_water_bank\pragmas.adc  20061119195948 00000000
+X 12 server.ads
+3K9*Server 5e11 13|1w6 10r10
+4V12*WaitForClients{boolean} 13|10s17
+X 13 server_test.adb
+4U11*Server_Test 4b11 11l5 11t16
+5N3 PORT_NR 10r32
+6b3 bOk{boolean} 7r24 10m3
+
