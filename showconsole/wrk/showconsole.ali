@@ -71,7 +71,7 @@ D interfac.ads		20140531114600 ef8b39d4 interfaces%s
 D i-c.ads		20101110140308 5421119b interfaces.c%s
 D i-cstrin.ads		20140116162450 341d0ddf interfaces.c.strings%s
 D i-cstrea.ads		20140609063624 e53d8b8e interfaces.c_streams%s
-D showconsole.adb	20150429112750 726e9662 showconsole%b
+D showconsole.adb	20150429121826 726e9662 showconsole%b
 D system.ads		20120806180456 5fc8ae56 system%s
 D s-atacco.ads		20120408201644 4c36d12f system.address_to_access_conversions%s
 D s-crtl.ads		20140609063624 ca3eb19d system.crtl%s
