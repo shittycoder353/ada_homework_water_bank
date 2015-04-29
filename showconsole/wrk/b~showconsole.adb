@@ -11,8 +11,6 @@ package body ada_main is
 
    E084 : Short_Integer; pragma Import (Ada, E084, "system__os_lib_E");
    E015 : Short_Integer; pragma Import (Ada, E015, "system__soft_links_E");
-   E219 : Short_Integer; pragma Import (Ada, E219, "system__fat_lflt_E");
-   E222 : Short_Integer; pragma Import (Ada, E222, "system__fat_llf_E");
    E025 : Short_Integer; pragma Import (Ada, E025, "system__exception_table_E");
    E135 : Short_Integer; pragma Import (Ada, E135, "ada__containers_E");
    E073 : Short_Integer; pragma Import (Ada, E073, "ada__io_exceptions_E");
@@ -52,7 +50,7 @@ package body ada_main is
    E132 : Short_Integer; pragma Import (Ada, E132, "connection_E");
    E107 : Short_Integer; pragma Import (Ada, E107, "client_E");
    E181 : Short_Integer; pragma Import (Ada, E181, "connection_msgs_E");
-   E228 : Short_Integer; pragma Import (Ada, E228, "valuetypes_E");
+   E219 : Short_Integer; pragma Import (Ada, E219, "valuetypes_E");
    E218 : Short_Integer; pragma Import (Ada, E218, "client_msgs_E");
 
    Local_Priority_Specific_Dispatching : constant String := "";
@@ -295,10 +293,6 @@ package body ada_main is
       Finalize_Library_Objects := finalize_library'access;
 
       System.Soft_Links'Elab_Spec;
-      System.Fat_Lflt'Elab_Spec;
-      E219 := E219 + 1;
-      System.Fat_Llf'Elab_Spec;
-      E222 := E222 + 1;
       System.Exception_Table'Elab_Body;
       E025 := E025 + 1;
       Ada.Containers'Elab_Spec;
@@ -388,7 +382,7 @@ package body ada_main is
       Connection'Elab_Body;
       E132 := E132 + 1;
       Valuetypes'Elab_Spec;
-      E228 := E228 + 1;
+      E219 := E219 + 1;
       Client_Msgs'Elab_Spec;
       E218 := E218 + 1;
    end adainit;

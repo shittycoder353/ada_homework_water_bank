@@ -468,38 +468,20 @@ package ada_main is
    pragma Export (C, u00215, "system__tasking__stagesB");
    u00216 : constant Version_32 := 16#401a77c8#;
    pragma Export (C, u00216, "system__tasking__stagesS");
-   u00217 : constant Version_32 := 16#fb14e1c0#;
+   u00217 : constant Version_32 := 16#55a02b8b#;
    pragma Export (C, u00217, "client_msgsB");
    u00218 : constant Version_32 := 16#6939ef5a#;
    pragma Export (C, u00218, "client_msgsS");
-   u00219 : constant Version_32 := 16#fa23de8c#;
-   pragma Export (C, u00219, "system__fat_lfltS");
-   u00220 : constant Version_32 := 16#9ab97975#;
-   pragma Export (C, u00220, "system__img_realB");
-   u00221 : constant Version_32 := 16#9860ffb4#;
-   pragma Export (C, u00221, "system__img_realS");
-   u00222 : constant Version_32 := 16#80f37066#;
-   pragma Export (C, u00222, "system__fat_llfS");
-   u00223 : constant Version_32 := 16#f1f88835#;
-   pragma Export (C, u00223, "system__img_lluB");
-   u00224 : constant Version_32 := 16#8b590a55#;
-   pragma Export (C, u00224, "system__img_lluS");
-   u00225 : constant Version_32 := 16#eef535cd#;
-   pragma Export (C, u00225, "system__img_unsB");
-   u00226 : constant Version_32 := 16#5d643661#;
-   pragma Export (C, u00226, "system__img_unsS");
-   u00227 : constant Version_32 := 16#0fb8c821#;
-   pragma Export (C, u00227, "system__powten_tableS");
-   u00228 : constant Version_32 := 16#7d56f577#;
-   pragma Export (C, u00228, "valuetypesS");
-   u00229 : constant Version_32 := 16#fe1ffede#;
-   pragma Export (C, u00229, "ada__strings__boundedB");
-   u00230 : constant Version_32 := 16#89c18940#;
-   pragma Export (C, u00230, "ada__strings__boundedS");
-   u00231 : constant Version_32 := 16#a9b52bad#;
-   pragma Export (C, u00231, "ada__strings__superboundedB");
-   u00232 : constant Version_32 := 16#da6addee#;
-   pragma Export (C, u00232, "ada__strings__superboundedS");
+   u00219 : constant Version_32 := 16#7d56f577#;
+   pragma Export (C, u00219, "valuetypesS");
+   u00220 : constant Version_32 := 16#fe1ffede#;
+   pragma Export (C, u00220, "ada__strings__boundedB");
+   u00221 : constant Version_32 := 16#89c18940#;
+   pragma Export (C, u00221, "ada__strings__boundedS");
+   u00222 : constant Version_32 := 16#a9b52bad#;
+   pragma Export (C, u00222, "ada__strings__superboundedB");
+   u00223 : constant Version_32 := 16#da6addee#;
+   pragma Export (C, u00223, "ada__strings__superboundedS");
    --  BEGIN ELABORATION ORDER
    --  ada%s
    --  ada.characters%s
@@ -523,7 +505,6 @@ package ada_main is
    --  system.img_enum_new%b
    --  system.img_int%s
    --  system.img_int%b
-   --  system.img_real%s
    --  system.io%s
    --  system.io%b
    --  system.machine_code%s
@@ -535,7 +516,6 @@ package ada_main is
    --  system.crtl%s
    --  interfaces.c_streams%s
    --  interfaces.c_streams%b
-   --  system.powten_table%s
    --  system.restrictions%s
    --  system.restrictions%b
    --  system.standard_library%s
@@ -566,13 +546,6 @@ package ada_main is
    --  system.traces%s
    --  system.traces%b
    --  system.unsigned_types%s
-   --  system.fat_lflt%s
-   --  system.fat_llf%s
-   --  system.img_llu%s
-   --  system.img_llu%b
-   --  system.img_uns%s
-   --  system.img_uns%b
-   --  system.img_real%b
    --  system.val_int%s
    --  system.val_uns%s
    --  system.val_util%s
