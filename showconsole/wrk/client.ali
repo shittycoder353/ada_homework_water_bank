@@ -1,0 +1,126 @@
+V "GNAT Lib v7.3"
+A -O0
+A -g
+A -gnatwa
+A -gnatwl
+A -gnatwK
+A -gnatf
+A -gnatQ
+A -gnato
+A -gnatVa
+A -gnatA
+P SS ZX
+
+RN
+RR NO_ABORT_STATEMENTS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_INITIALIZE_SCALARS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+RR MAX_ASYNCHRONOUS_SELECT_NESTING=0
+
+U client%b		client.adb		9cb0e1f4 NE OO PK IS
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W gnat%s		gnat.ads		gnat.ali
+W gnat.sockets%s	g-socket.adb		g-socket.ali
+W interfaces%s		interfac.ads		interfac.ali
+W system.concat_3%s	s-conca3.adb		s-conca3.ali
+W system.scalar_values%s  s-scaval.adb		s-scaval.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U client%s		client.ads		1a6386a3 EE NE OO PK IS
+W connection%s		connection.adb		connection.ali
+
+D ada.ads		20060709122604 3ffc8e18 ada%s
+D a-except.ads		20140415182720 5250cb69 ada.exceptions%s
+D a-finali.ads		20140118000942 69f99942 ada.finalization%s
+D a-ioexce.ads		20131225032402 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20140529074512 22b06827 ada.streams%s
+D a-tags.ads		20140415174600 dc4d0634 ada.tags%s
+D a-textio.ads		20140209021914 386df5d4 ada.text_io%s
+D a-unccon.ads		20060709122604 f9eb8f06 ada.unchecked_conversion%s
+D a-uncdea.ads		20060709122604 f15a5ed1 ada.unchecked_deallocation%s
+D client.ads		20150429084242 00d6ace7 client%s
+D client.adb		20150429084242 9ddde006 client%b
+D connection.ads	20150429084242 1ab52a44 connection%s
+D gnat.ads		20140603192030 fd2ad2f1 gnat%s
+D g-socket.ads		20140604164854 6b8693a8 gnat.sockets%s
+D interfac.ads		20140531114600 ef8b39d4 interfaces%s
+D i-c.ads		20101110140308 5421119b interfaces.c%s
+D i-cstrea.ads		20140609063624 e53d8b8e interfaces.c_streams%s
+D system.ads		20120806180456 5fc8ae56 system%s
+D s-conca3.ads		20131225032402 0b705ca5 system.concat_3%s
+D s-crtl.ads		20140609063624 ca3eb19d system.crtl%s
+D s-exctab.ads		20131225031848 54135002 system.exception_table%s
+D s-fatflt.ads		20101026134802 11beb392 system.fat_flt%s
+D s-fatgen.ads		20140607163942 9267ca45 system.fat_gen%s
+D s-fatlfl.ads		20101026134802 378cba9f system.fat_lflt%s
+D s-fatllf.ads		20101026134802 4d5c1475 system.fat_llf%s
+D s-fatsfl.ads		20101026134802 e2f873d3 system.fat_sflt%s
+D s-ficobl.ads		20140302165540 078245e4 system.file_control_block%s
+D s-finmas.ads		20131225031848 814daec4 system.finalization_masters%s
+D s-finroo.ads		20120402200032 4ff27390 system.finalization_root%s
+D s-oscons.ads		20140614025446 96d85b6a system.os_constants%s
+D s-parame.ads		20140604164142 7e2a0d7f system.parameters%s
+D s-pooglo.ads		20110224134916 542f33d0 system.pool_global%s
+D s-scaval.ads		20101026134802 bea40757 system.scalar_values%s
+D s-secsta.ads		20131225031848 86a2856d system.secondary_stack%s
+D s-soflin.ads		20140608144522 aa763b52 system.soft_links%s
+D s-stache.ads		20131225031848 a37c21ec system.stack_checking%s
+D s-stalib.ads		20140607163942 fa0a3617 system.standard_library%s
+D s-stoele.ads		20131225031848 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20140604164142 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20130510054206 b16154c2 system.storage_pools%s
+D s-stratt.ads		20130629133728 aedef97e system.stream_attributes%s
+D s-traent.ads		20140412173246 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20140526151416 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20140220135258 1b7d22d2 system.wch_con%s
+D d:\skola\semestralka\ada_homework_water_bank\pragmas.adc  20061119195948 00000000
+X 1 ada.ads
+16K9*Ada 19e8 11|1r6 2r6 2r37 45r79
+X 2 a-except.ads
+53K13*Exceptions 360e19 11|1w10 45r83
+93V13*Exception_Message{string} 11|45s94
+X 7 a-textio.ads
+49K13*Text_IO 471e16 11|2w10 2r41
+263U14*Put_Line 11|45s9
+X 10 client.ads
+3K9*Client 9l5 9e11 11|5b14 52l5 52t11
+5V12*Connect{12|11P8} 5>20 6>20 7>20 11|11b12 50l7 50t14
+5a20 connectionName{string} 11|12b7 42r35 45r18
+6a20 host{string} 11|13b7
+7i20 portNr{natural} 11|14b7 23r31
+X 11 client.adb
+17p5 c{12|11P8} 42m7 48r12
+18r5 Address{14|502R9} 22m5 23m5 40r31
+19i5 Socket{14|409I9} 24m20 27r9 40r23 42r27
+44r20 E{2|62R9} 45r112
+X 12 connection.ads
+2K9*Connection 10|1w6 1r37 12|43e15
+11P8*TConnectionRef 10|7r48 11|15r14 17r9
+16V12*InitConnection{11P8} 11|42s12
+X 13 gnat.ads
+34K9*GNAT 11|3r6 3r37 13|37e9
+X 14 g-socket.ads
+55K14*Sockets 11|3w11 3r42 14|1260e17
+409I9*Socket_Type<integer> 11|19r16
+448X4*Socket_Error 11|44r23
+476I9*Port_Type<integer> 11|23r21
+494r4*Loopback_Inet_Addr{485R9} 11|22r21
+502R9*Sock_Addr_Type 11|18r16 14|505e14
+503r7*Addr{485R9} 11|22m13
+504i7*Port{476I9} 11|23m13
+669n7*Socket_Level{668E9} 11|28r9
+680n7*Reuse_Address{678E9} 11|29r10
+802U14*Create_Socket 11|24s5
+842U14*Connect_Socket 11|40s7
+991U14*Set_Socket_Option 11|26s5
+

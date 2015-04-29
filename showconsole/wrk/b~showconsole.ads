@@ -468,7 +468,7 @@ package ada_main is
    pragma Export (C, u00215, "system__tasking__stagesB");
    u00216 : constant Version_32 := 16#401a77c8#;
    pragma Export (C, u00216, "system__tasking__stagesS");
-   u00217 : constant Version_32 := 16#0abddb7c#;
+   u00217 : constant Version_32 := 16#fb14e1c0#;
    pragma Export (C, u00217, "client_msgsB");
    u00218 : constant Version_32 := 16#6939ef5a#;
    pragma Export (C, u00218, "client_msgsS");

@@ -1,0 +1,169 @@
+V "GNAT Lib v7.3"
+A -O0
+A -g
+A -gnatwa
+A -gnatwl
+A -gnatwK
+A -gnatf
+A -gnatQ
+A -gnato
+A -gnatVa
+A -gnatA
+P SS ZX
+
+RN
+RR NO_ABORT_STATEMENTS
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_IMPLICIT_LOOPS
+RV NO_INITIALIZE_SCALARS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+RR MAX_ASYNCHRONOUS_SELECT_NESTING=0
+
+U client_msgs%b		client_msgs.adb		0abddb7c NE OO PK IS
+W ada%s			ada.ads			ada.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system.concat_3%s	s-conca3.adb		s-conca3.ali
+W system.fat_lflt%s	s-fatlfl.ads		s-fatlfl.ali
+W system.img_real%s	s-imgrea.adb		s-imgrea.ali
+W system.scalar_values%s  s-scaval.adb		s-scaval.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U client_msgs%s		client_msgs.ads		6939ef5a EE OO PF PK IS
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.streams%s		a-stream.adb		a-stream.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W connection%s		connection.adb		connection.ali
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+W system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+W system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.storage_elements%s  s-stoele.adb	s-stoele.ali
+W system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+W system.strings.stream_ops%s  s-ststop.adb	s-ststop.ali
+W valuetypes%s		valuetypes.ads		valuetypes.ali
+
+D ada.ads		20060709122604 3ffc8e18 ada%s
+D a-charac.ads		20070910122414 2d3ec45b ada.characters%s
+D a-chlat1.ads		20131225032402 66457d31 ada.characters.latin_1%s
+D a-except.ads		20140415182720 5250cb69 ada.exceptions%s
+D a-finali.ads		20140118000942 69f99942 ada.finalization%s
+D a-ioexce.ads		20131225032402 e4a01f64 ada.io_exceptions%s
+D a-reatim.ads		20140215140906 63f07669 ada.real_time%s
+D a-stream.ads		20140529074512 22b06827 ada.streams%s
+D a-string.ads		20060709122604 90ac6797 ada.strings%s
+D a-strbou.ads		20140521153704 53ab54ae ada.strings.bounded%s
+D a-strmap.ads		20140117162816 e8bb714a ada.strings.maps%s
+D a-strsup.ads		20130419141218 a27dcb33 ada.strings.superbounded%s
+D a-tags.ads		20140415174600 dc4d0634 ada.tags%s
+D a-textio.ads		20140209021914 386df5d4 ada.text_io%s
+D a-unccon.ads		20060709122604 f9eb8f06 ada.unchecked_conversion%s
+D a-uncdea.ads		20060709122604 f15a5ed1 ada.unchecked_deallocation%s
+D client_msgs.ads	20150429084242 3e8112ae client_msgs%s
+D client_msgs.adb	20150429084242 0c513c06 client_msgs%b
+D connection.ads	20150429084242 1ab52a44 connection%s
+D gnat.ads		20140603192030 fd2ad2f1 gnat%s
+D g-socket.ads		20140604164854 6b8693a8 gnat.sockets%s
+D interfac.ads		20140531114600 ef8b39d4 interfaces%s
+D i-c.ads		20101110140308 5421119b interfaces.c%s
+D i-cstrin.ads		20140116162450 341d0ddf interfaces.c.strings%s
+D i-cstrea.ads		20140609063624 e53d8b8e interfaces.c_streams%s
+D system.ads		20120806180456 5fc8ae56 system%s
+D s-atacco.ads		20120408201644 4c36d12f system.address_to_access_conversions%s
+D s-conca3.ads		20131225032402 0b705ca5 system.concat_3%s
+D s-crtl.ads		20140609063624 ca3eb19d system.crtl%s
+D s-exctab.ads		20131225031848 54135002 system.exception_table%s
+D s-fatflt.ads		20101026134802 11beb392 system.fat_flt%s
+D s-fatgen.ads		20140607163942 9267ca45 system.fat_gen%s
+D s-fatlfl.ads		20101026134802 378cba9f system.fat_lflt%s
+D s-fatllf.ads		20101026134802 4d5c1475 system.fat_llf%s
+D s-fatsfl.ads		20101026134802 e2f873d3 system.fat_sflt%s
+D s-ficobl.ads		20140302165540 078245e4 system.file_control_block%s
+D s-finmas.ads		20131225031848 814daec4 system.finalization_masters%s
+D s-finroo.ads		20120402200032 4ff27390 system.finalization_root%s
+D s-imgrea.ads		20101026134802 c7a851e2 system.img_real%s
+D s-multip.ads		20100727005504 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20140614025446 96d85b6a system.os_constants%s
+D s-osinte.ads		20101110140648 ecf1fbfd system.os_interface%s
+D s-parame.ads		20140604164142 7e2a0d7f system.parameters%s
+D s-pooglo.ads		20110224134916 542f33d0 system.pool_global%s
+D s-scaval.ads		20101026134802 bea40757 system.scalar_values%s
+D s-secsta.ads		20131225031848 86a2856d system.secondary_stack%s
+D s-soflin.ads		20140608144522 aa763b52 system.soft_links%s
+D s-stache.ads		20131225031848 a37c21ec system.stack_checking%s
+D s-stausa.ads		20110325145854 017a0a05 system.stack_usage%s
+D s-stalib.ads		20140607163942 fa0a3617 system.standard_library%s
+D s-stoele.ads		20131225031848 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20140604164142 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20130510054206 b16154c2 system.storage_pools%s
+D s-stratt.ads		20130629133728 aedef97e system.stream_attributes%s
+D s-string.ads		20131225031848 8fe54fb7 system.strings%s
+D s-ststop.ads		20131225031848 e6693757 system.strings.stream_ops%s
+D s-tasinf.ads		20140124181712 601f6b72 system.task_info%s
+D s-taspri.ads		20140604164142 196697f7 system.task_primitives%s
+D s-taprop.ads		20140109083702 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20140411214108 4d5e47af system.tasking%s
+D s-traent.ads		20140412173246 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20140526151416 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20140220135258 1b7d22d2 system.wch_con%s
+D s-win32.ads		20130730171346 b7f96285 system.win32%s
+D valuetypes.ads	20150429084242 4d0dd7b0 valuetypes%s
+D d:\skola\semestralka\ada_homework_water_bank\pragmas.adc  20061119195948 00000000
+X 1 ada.ads
+16K9*Ada 19e8 18|1r6 1r45
+X 10 a-strbou.ads
+50R12*Bounded_String<12|47R9>
+67V16*To_String{string} 18|32s28[65|36]
+X 14 a-textio.ads
+49K13*Text_IO 471e16 18|1w10 1r49
+263U14*Put_Line 18|32s5
+X 17 client_msgs.ads
+4K9*Client_Msgs 63l5 63e16 18|2b14 46l5 46t16
+12R8*CConnectMessage<19|4R8> 14e13 15r43 17P13 17r30 18|8r31
+13r5*clientName{65|47R11}
+15P8*CConnectMessage_CPtr(12R8)
+17U13*Action<19|8p13> 17>20 18|8b13 13l7 13t13
+17r20 Self{12R8} 18|8b21
+27R8*CAttachValue<19|4R8> 29e13 30P13 30r30 44r40 18|19r31
+28r5*valueName{65|40R11}
+30U13*Action<19|8p13> 30>20 18|19b13 24l7 24t13
+30r20 Self{27R8} 18|19b21
+38R8*CChangeValue<19|4R8> 43e13 45P13 45r30 18|30r31
+39r5*valueName{65|40R11} 18|32r43
+41r5*value{65|11R8} 18|32r69
+44P8*CAttachValue_CPtr(27R8)
+45U13*Action<19|8p13> 45>20 18|30b13 33l7 33t13
+45r20 Self{38R8} 18|30b21 32r38 32r64
+54R8*CSetValue<19|4R8> 59e13 60r37 61P13 61r30 18|39r31
+55r5*valueName{65|40R11}
+57r5*value{65|11R8}
+60P8*CSetValue_CPtr(54R8)
+61U13*Action<19|8p13> 61>20 18|39b13 44l7 44t13
+61r20 Self{54R8} 18|39b21
+X 19 connection.ads
+2K9*Connection 17|1w6 1r29 19|43e15
+4H8*CMessage 17|12r31 27r28 38r28 54r25 19|41e13
+X 49 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+X 65 valuetypes.ads
+4K9*ValueTypes 17|2w6 2r29 65|49e15
+11R8*TValue 17|41r13 57r13 65|21e13
+13f5*value{long_float} 18|32r75
+36K11*ValueName_Pkg[10|46] 18|32r14
+40R11*TValueName{10|50R12[36]} 17|28r17 39r17 55r17
+47R11*TClientName{10|50R12[43]} 17|13r18
+

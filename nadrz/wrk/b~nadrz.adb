@@ -426,15 +426,15 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   D:\Skola-ada\c5\nadrz\wrk\client.o
-   --   D:\Skola-ada\c5\nadrz\wrk\connection_msgs.o
-   --   D:\Skola-ada\c5\nadrz\wrk\connection.o
-   --   D:\Skola-ada\c5\nadrz\wrk\valuetypes.o
-   --   D:\Skola-ada\c5\nadrz\wrk\client_msgs.o
-   --   D:\Skola-ada\c5\nadrz\wrk\nadrz.o
-   --   -LD:\Skola-ada\c5\nadrz\wrk\
-   --   -LD:\Skola-ada\c5\nadrz\wrk\
-   --   -LC:/Programy/7.3.0w-20140613/lib/gcc/i686-pc-mingw32/4.7.4/adalib/
+   --   D:\Skola\Semestralka\ada_homework_water_bank\nadrz\wrk\client.o
+   --   D:\Skola\Semestralka\ada_homework_water_bank\nadrz\wrk\connection_msgs.o
+   --   D:\Skola\Semestralka\ada_homework_water_bank\nadrz\wrk\connection.o
+   --   D:\Skola\Semestralka\ada_homework_water_bank\nadrz\wrk\valuetypes.o
+   --   D:\Skola\Semestralka\ada_homework_water_bank\nadrz\wrk\client_msgs.o
+   --   D:\Skola\Semestralka\ada_homework_water_bank\nadrz\wrk\nadrz.o
+   --   -LD:\Skola\Semestralka\ada_homework_water_bank\nadrz\wrk\
+   --   -LD:\Skola\Semestralka\ada_homework_water_bank\nadrz\wrk\
+   --   -LD:/GNATPRO/7.3.0w-20140613/lib/gcc/i686-pc-mingw32/4.7.4/adalib/
    --   -static
    --   -lgnarl
    --   -lgnat
