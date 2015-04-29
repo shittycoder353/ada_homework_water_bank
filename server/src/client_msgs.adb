@@ -1,4 +1,6 @@
 with Ada.Text_IO;		use Ada.Text_IO;
+with Ada.Float_Text_IO;                 use Ada.Float_Text_IO;
+with Ada.Long_Float_Text_IO;            use Ada.Long_Float_Text_IO;
 
 with Server_Services;
 
@@ -40,7 +42,10 @@ package body Client_Msgs is
   procedure Action (Self : in CSetValue) is
   begin
       Server_Services.SetValue(GetConnectionRef(Self), Self.valueName, Self.value);
-      Put_Line(ValueName_Pkg.To_String(Self.valueName) & " = " & Self.value.value'Img);
+      Put(ValueName_Pkg.To_String(Self.valueName)& " = ");
+      Put(Item =>Self.value.value, Fore => 5, Aft => 3, Exp => 0);
+      Put_Line("");
+
   end Action;
 
 end Client_Msgs;
