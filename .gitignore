@@ -58,3 +58,4 @@ _ReSharper*/
 *.orig
 *.ali
 *.db
+*/*/*.*
