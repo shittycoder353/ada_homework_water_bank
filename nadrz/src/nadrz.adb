@@ -6,8 +6,10 @@ with ValueTypes;			use ValueTypes;
 with Ada.Text_IO;			use Ada.Text_IO;
 with GNAT.OS_Lib;
 with Ada.Numerics.Float_Random;	use Ada.Numerics.Float_Random;
-use Ada.Text_IO;
 with Ada.Real_Time;		use Ada.Real_Time;
+with Ada.Numerics.Elementary_Functions; use Ada.Numerics.Elementary_Functions;
+with Ada.Float_Text_IO;                 use Ada.Float_Text_IO;
+with Ada.Long_Float_Text_IO;            use Ada.Long_Float_Text_IO;
 procedure Nadrz is
   c : Connection.TConnectionRef;
   bConnectionWasTerminated : Boolean;
@@ -70,6 +72,8 @@ begin
         msg_CPtr.value := validValue;
         msg_CPtr.value.value := Long_Float(hladina);
         Connection.SendMessage(c, CMessage_CPtr(msg_CPtr), bConnectionWasTerminated); --posle hodnotu
+        --Put_Line(Long_Float'Image(hladina));
+        Put(Item =>hladina,Fore => 5, Aft => 3, Exp => 0);
         Put("Odtok: ");
         Put_Line(Long_Float'Image(odtok));
         Put("Pritok: ");
