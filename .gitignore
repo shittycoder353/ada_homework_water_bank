@@ -34,3 +34,13 @@ showconsole/wrk/gnatinspect.db-wal
 showconsole/wrk/showconsole.ali
 showconsole/wrk/showconsole.o
 showconsole/wrk/showconsole-loc.xml
+nadrz.exe
+nadrz/wrk/b~nadrz.adb
+nadrz/wrk/b~nadrz.ads
+nadrz/wrk/b~nadrz.ali
+nadrz/wrk/b~nadrz.o
+nadrz/wrk/gnatinspect.db
+nadrz/wrk/gnatinspect.db-shm
+nadrz/wrk/gnatinspect.db-wal
+nadrz/wrk/nadrz.ali
+nadrz/wrk/nadrz.o
