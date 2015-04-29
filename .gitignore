@@ -42,3 +42,4 @@ _ReSharper*/
 *.o
 *.orig
 
+*.db
