@@ -1,5 +1,6 @@
 # Ignore everything
 *.*
+*/*/*.*
 
 !*.adb
 !*.ads
@@ -7,6 +8,20 @@
 !.gitignore
 !*.txt
 !pragmas.adc
+
+!*/*/*.adb
+!*/*/*.ads
+!*/*/*.gpr
+!*/*/.gitignore
+!*/*/*.txt
+!*/*/*.pragmas.adc
+
+!*/*.adb
+!*/*.ads
+!*/*.gpr
+!*/.gitignore
+!*/*.txt
+!*/*.pragmas.adc
 
 #ignore thumbnails created by windows
 Thumbs.db
@@ -41,5 +56,5 @@ _ReSharper*/
 *.xml
 *.o
 *.orig
-
+*.ali
 *.db
