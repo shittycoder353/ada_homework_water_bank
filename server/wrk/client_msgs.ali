@@ -24,22 +24,20 @@ RV NO_IMPLICIT_LOOPS
 RV NO_INITIALIZE_SCALARS
 RV NO_SECONDARY_STACK
 RV NO_STANDARD_STORAGE_POOLS
-RV NO_IMPLEMENTATION_ATTRIBUTES
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 RR MAX_ASYNCHRONOUS_SELECT_NESTING=0
 
-U client_msgs%b		client_msgs.adb		6d01b5f4 NE OO PK IS
+U client_msgs%b		client_msgs.adb		41700a9f NE OO PK IS
 W ada%s			ada.ads			ada.ali
+W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+W ada.long_float_text_io%s  a-lfteio.ads	a-lfteio.ali
 W ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W server_services%s	server_services.adb	server_services.ali
 W system.concat_2%s	s-conca2.adb		s-conca2.ali
-W system.concat_3%s	s-conca3.adb		s-conca3.ali
 W system.fat_lflt%s	s-fatlfl.ads		s-fatlfl.ali
-W system.img_real%s	s-imgrea.adb		s-imgrea.ali
-W system.scalar_values%s  s-scaval.adb		s-scaval.ali
 W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 
 U client_msgs%s		client_msgs.ads		6939ef5a EE OO PF PK IS
@@ -63,7 +61,9 @@ D a-charac.ads		20070910122414 2d3ec45b ada.characters%s
 D a-chlat1.ads		20131225032402 66457d31 ada.characters.latin_1%s
 D a-except.ads		20140415182720 5250cb69 ada.exceptions%s
 D a-finali.ads		20140118000942 69f99942 ada.finalization%s
+D a-flteio.ads		20060709122604 e18a47a0 ada.float_text_io%s
 D a-ioexce.ads		20131225032402 e4a01f64 ada.io_exceptions%s
+D a-lfteio.ads		20060709122604 4969a46f ada.long_float_text_io%s
 D a-reatim.ads		20140215140906 63f07669 ada.real_time%s
 D a-stream.ads		20140529074512 22b06827 ada.streams%s
 D a-string.ads		20060709122604 90ac6797 ada.strings%s
@@ -72,10 +72,11 @@ D a-strmap.ads		20140117162816 e8bb714a ada.strings.maps%s
 D a-strsup.ads		20130419141218 a27dcb33 ada.strings.superbounded%s
 D a-tags.ads		20140415174600 dc4d0634 ada.tags%s
 D a-textio.ads		20140209021914 386df5d4 ada.text_io%s
+D a-tiflio.ads		20140208230218 56fbda09 ada.text_io.float_io%s
 D a-unccon.ads		20060709122604 f9eb8f06 ada.unchecked_conversion%s
 D a-uncdea.ads		20060709122604 f15a5ed1 ada.unchecked_deallocation%s
 D client_msgs.ads	20150429084242 3e8112ae client_msgs%s
-D client_msgs.adb	20150429104838 e9e5d772 client_msgs%b
+D client_msgs.adb	20150429122614 6d778bd6 client_msgs%b
 D connection.ads	20150429084242 1ab52a44 connection%s
 D gnat.ads		20140603192030 fd2ad2f1 gnat%s
 D g-socket.ads		20140604164854 6b8693a8 gnat.sockets%s
@@ -87,7 +88,6 @@ D server_services.ads	20150429084242 820885fc server_services%s
 D system.ads		20120806180456 5fc8ae56 system%s
 D s-atacco.ads		20120408201644 4c36d12f system.address_to_access_conversions%s
 D s-conca2.ads		20131225032402 02a0d7d0 system.concat_2%s
-D s-conca3.ads		20131225032402 0b705ca5 system.concat_3%s
 D s-crtl.ads		20140609063624 ca3eb19d system.crtl%s
 D s-exctab.ads		20131225031848 54135002 system.exception_table%s
 D s-fatflt.ads		20101026134802 11beb392 system.fat_flt%s
@@ -98,7 +98,6 @@ D s-fatsfl.ads		20101026134802 e2f873d3 system.fat_sflt%s
 D s-ficobl.ads		20140302165540 078245e4 system.file_control_block%s
 D s-finmas.ads		20131225031848 814daec4 system.finalization_masters%s
 D s-finroo.ads		20120402200032 4ff27390 system.finalization_root%s
-D s-imgrea.ads		20101026134802 c7a851e2 system.img_real%s
 D s-multip.ads		20100727005504 38ac9f73 system.multiprocessors%s
 D s-oscons.ads		20140614025446 96d85b6a system.os_constants%s
 D s-osinte.ads		20101110140648 ecf1fbfd system.os_interface%s
@@ -127,55 +126,67 @@ D s-win32.ads		20130730171346 b7f96285 system.win32%s
 D valuetypes.ads	20150429084242 4d0dd7b0 valuetypes%s
 D d:\skola\semestralka\ada_homework_water_bank\pragmas.adc  20061119195948 00000000
 X 1 ada.ads
-16K9*Ada 19e8 18|1r6 1r37
-X 10 a-strbou.ads
-50R12*Bounded_String<12|47R9>
-67V16*To_String{string} 18|14s32[67|43] 43s30[67|36]
-X 14 a-textio.ads
-49K13*Text_IO 471e16 18|1w10 1r41
-263U14*Put_Line 18|14s5 33s5 43s7
-X 17 client_msgs.ads
-4K9*Client_Msgs 63l5 63e16 18|5b14 46l5 46t16
-12R8*CConnectMessage<19|4R8> 14e13 15r43 17P13 17r30 18|11r31
-13r5*clientName{67|47R11} 18|14r47
+16K9*Ada 19e8 21|1r6 1r37 2r6 2r45 3r6 3r45
+X 6 a-flteio.ads
+20K13*Float_Text_IO[17|46] 21|2w10 2r49
+X 8 a-lfteio.ads
+18K13*Long_Float_Text_IO[17|46] 21|3w10 3r49
+X 12 a-strbou.ads
+50R12*Bounded_String<14|47R9>
+67V16*To_String{string} 21|16s32[68|43] 45s25[68|36]
+X 16 a-textio.ads
+49K13*Text_IO 471e16 21|1w10 1r41
+73I12*Field{integer}
+242U14*Put 21|45s7
+263U14*Put_Line 21|16s5 35s5 47s7
+X 17 a-tiflio.ads
+68U14*Put 21|46s7[8|18]
+69f7 Item{long_float} 21|46r11[8|18]
+70i7 Fore{16|73I12} 21|46r36[8|18]
+71i7 Aft{16|73I12} 21|46r47[8|18]
+72i7 Exp{16|73I12} 21|46r57[8|18]
+X 20 client_msgs.ads
+4K9*Client_Msgs 63l5 63e16 21|7b14 51l5 51t16
+12R8*CConnectMessage<22|4R8> 14e13 15r43 17P13 17r30 21|13r31
+13r5*clientName{68|47R11} 21|16r47
 15P8*CConnectMessage_CPtr(12R8)
-17U13*Action<19|8p13> 17>20 18|11b13 15l7 15t13
-17r20 Self{12R8} 18|11b21 14r42
-27R8*CAttachValue<19|4R8> 29e13 30P13 30r30 44r40 18|22r31
-28r5*valueName{67|40R11} 18|24r62
-30U13*Action<19|8p13> 30>20 18|22b13 25l7 25t13
-30r20 Self{27R8} 18|22b21 24r50 24r57
-38R8*CChangeValue<19|4R8> 43e13 45P13 45r30 18|31r31
-39r5*valueName{67|40R11}
-41r5*value{67|11R8}
+17U13*Action<22|8p13> 17>20 21|13b13 17l7 17t13
+17r20 Self{12R8} 21|13b21 16r42
+27R8*CAttachValue<22|4R8> 29e13 30P13 30r30 44r40 21|24r31
+28r5*valueName{68|40R11} 21|26r62
+30U13*Action<22|8p13> 30>20 21|24b13 27l7 27t13
+30r20 Self{27R8} 21|24b21 26r50 26r57
+38R8*CChangeValue<22|4R8> 43e13 45P13 45r30 21|33r31
+39r5*valueName{68|40R11}
+41r5*value{68|11R8}
 44P8*CAttachValue_CPtr(27R8)
-45U13*Action<19|8p13> 45>20 18|31b13 34l7 34t13
-45r20 Self{38R8} 18|31b21 33r89
-54R8*CSetValue<19|4R8> 59e13 60r37 61P13 61r30 18|40r31
-55r5*valueName{67|40R11} 18|42r61 43r45
-57r5*value{67|11R8} 18|42r77 43r71
+45U13*Action<22|8p13> 45>20 21|33b13 36l7 36t13
+45r20 Self{38R8} 21|33b21 35r89
+54R8*CSetValue<22|4R8> 59e13 60r37 61P13 61r30 21|42r31
+55r5*valueName{68|40R11} 21|44r61 45r40
+57r5*value{68|11R8} 21|44r77 46r23
 60P8*CSetValue_CPtr(54R8)
-61U13*Action<19|8p13> 61>20 18|40b13 44l7 44t13
-61r20 Self{54R8} 18|40b21 42r49 42r56 42r72 43r40 43r66
-X 19 connection.ads
-2K9*Connection 17|1w6 1r29 19|43e15
-4H8*CMessage 17|12r31 27r28 38r28 54r25 19|41e13
+61U13*Action<22|8p13> 61>20 21|42b13 49l7 49t13
+61r20 Self{54R8} 21|42b21 44r49 44r56 44r72 45r35 46r18
+X 22 connection.ads
+2K9*Connection 20|1w6 1r29 22|43e15
+4H8*CMessage 20|12r31 27r28 38r28 54r25 22|41e13
 11P8*TConnectionRef
-28V12*GetConnectionRef{11P8} 18|24s33 33s72 42s32
-30V12*GetConnectionName{string} 18|33s54
-X 26 server_services.ads
-4K9*Server_Services 18|3w6 24r5 42r7 26|31e20
-8U13*AttachValue 18|24s21
-15U13*SetValue 18|42s23
-X 51 s-stausa.ads
+28V12*GetConnectionRef{11P8} 21|26s33 35s72 44s32
+30V12*GetConnectionName{string} 21|35s54
+X 29 server_services.ads
+4K9*Server_Services 21|5w6 26r5 44r7 29|31e20
+8U13*AttachValue 21|26s21
+15U13*SetValue 21|44s23
+X 52 s-stausa.ads
 203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
 268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
-X 67 valuetypes.ads
-4K9*ValueTypes 17|2w6 2r29 67|49e15
-11R8*TValue 17|41r13 57r13 67|21e13
-13f5*value{long_float} 18|43r77
-36K11*ValueName_Pkg[10|46] 18|43r16
-40R11*TValueName{10|50R12[36]} 17|28r17 39r17 55r17
-43K11*ClientName_Pkg[10|46] 18|12r9
-47R11*TClientName{10|50R12[43]} 17|13r18
+X 68 valuetypes.ads
+4K9*ValueTypes 20|2w6 2r29 68|49e15
+11R8*TValue 20|41r13 57r13 68|21e13
+13f5*value{long_float} 21|46r29
+36K11*ValueName_Pkg[12|46] 21|45r11
+40R11*TValueName{12|50R12[36]} 20|28r17 39r17 55r17
+43K11*ClientName_Pkg[12|46] 21|14r9
+47R11*TClientName{12|50R12[43]} 20|13r18
 
