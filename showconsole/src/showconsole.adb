@@ -33,7 +33,8 @@ begin
     end;
     --
     loop
-      delay 1000.0;
+
+      --delay 1000.0;
     end loop;
     --
     Connection.Disconnect(c);
